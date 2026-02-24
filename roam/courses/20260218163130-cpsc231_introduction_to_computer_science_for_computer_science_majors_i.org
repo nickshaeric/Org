@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       da52b10d-2af1-417f-803a-876de5d3adf8
+:END:
+#+title: CPSC231 - Introduction to Computer Science for Computer Science Majors I
+#+filetags: :course:
+* Course Info
+- Institution: Athabasca University
+- Term: Winter 2026
+
+* Unit 1
+
+* Assignments

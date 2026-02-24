@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       fa909f33-0197-4231-9197-c738d9eb9011
+:END:
+#+title: Converse & Contrapositive
+#+filetags: :lecture:
+* Lecture Notes
+The converse of a statement is formed by reversing its two parts in a conditional statement.
+
+If $P$, then $Q \Rightarrow$ If $Q$, then $P$.
+
+The contrapositive of a conditional statement "If $P$, then $Q$" is
+formed by negating both the hypothesis and conclusion and reversing
+their order, resulting in "If not $Q$, then not $P$"
+
+* Key Concepts
+A conditional statement of the form $P \implies Q$ does not always have
+the same truth value as its converse: $Q \implies P$
+
+The contrapositve is logically equivalent to the original statement,
+meaning both have the same truth value.
+
+* Examples
+Let $P$ and $Q$ be statement variables.
+Converse: $\text{If } P, \text{ then } Q \implies \text{If } Q, \text{ then } P$
+Contrapositive: $\text{If } P, \text{ then } Q \implies \text{If } \neg Q, \text{ then } \neg P$
+
+* Connected Topics
+- [[id:e9484f3a-41d2-4938-bf92-461b58c4d2a8][Logic & Statements]]
+- [[id:57005d63-1b06-44ad-8d0f-7f72168e9f2f][Statements & Negation]]

@@ -1,0 +1,39 @@
+:PROPERTIES:
+:ID:       d0f592ee-c68f-4513-8d78-7b9d99366fee
+:END:
+#+title: Prime & Composite
+#+filetags: :topic:
+* Definition
+** Prime Number
+An integer $n$ is prime $\iff n>1$ so that its only positive divisors are $1$ and itself.
+
+** Composite Number
+An integer $n$ is composite $\iff n>1$ and $n$ is not prime.
+
+* Key Points
+- Smallest prime number is $2$.
+- $2$ is the *only even prime*.
+- Every integer $n>1$ is either prime or composite.
+- If $n$ is composite, then it can be written as a product of two integers
+  $a,b$ where $1<a<n$ and $1<b<n$.
+- If $p$ is prime and $p \mid ab$, then $p \mid a$ or $p \mid b$.
+
+* Examples
+** Example 1
+$\forall x \in \mathbb{Z}, n^2+n+41$ is prime.
+Answer: False
+
+Proof: Let $n=40$, where $40 \in \mathbb{Z}$.
+Then,
+\begin{align*}
+n^{2}+n+41 &= {(40)}^{2}+(40)+41 \\
+&= 40(40+1)+41 \\
+&= 40 \times 41+41 \\
+&= 41^{2}
+\end{align*}
+
+$n^2+n+41$ is not a prime number.
+
+* Related Concepts
+- [[id:1bbe95ef-e160-48a2-9813-0860aa228335][Divisibility]]
+- [[id:cac591f0-5552-49a3-95bc-fe0984a6c77e][Divisibility & Modulo]]

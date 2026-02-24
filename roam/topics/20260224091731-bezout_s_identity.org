@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID:       8ff72bab-e30c-4a8c-adf8-b3e8d8fefa28
+:END:
+#+title: Bezout's Identity
+#+filetags: :topic:
+* Definition
+Bézout’s Identity (also called Bézout’s Lemma) states that for any integers \(a\) and \(b\), not both zero, there exist integers \(x\) and \(y\) such that
+
+\[ax + by = \gcd(a,b)\].
+
+The expression \(ax + by\) is called a **Bézout combination** of \(a\) and \(b\), and the set of all such combinations is the **Bézout set**.
+
+* Key Points
+- \(x\) and \(y\) are sometimes called **Bézout coefficients**.
+- A Bézout combination always exists for any integers \(a,b\), not both zero.
+- The smallest positive integer that can be expressed as \(ax + by\) is exactly \(\gcd(a,b)\).
+- If \(\gcd(a,b) = d\), then every integer of the form \(ax + by\) is a multiple of \(d\).
+
+* Examples
+1. For \(a = 12, b = 18\):
+   - \(\gcd(12,18) = 6\)
+   - One possible Bézout combination is \(12(-1) + 18(1) = 6\)
+
+2. For \(a = 7, b = 5\):
+   - \(\gcd(7,5) = 1\)
+   - One solution is \(7(2) + 5(-3) = 1\)
+
+3. For \(a = 24, b = 9\):
+   - \(\gcd(24,9)=3\)
+   - Example Bézout coefficients: \(24(-1)+9(3)=3\)
+
+* Related Concepts
+- [[id:010125cd-5767-44d0-9dcf-bd3453bf8cde][Greatest Common Divisor]]
+- **Euclidean Algorithm:**

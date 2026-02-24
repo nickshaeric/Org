@@ -1,0 +1,36 @@
+:PROPERTIES:
+:ID:       912f4ed1-a567-4446-8902-d4279536ba4d
+:END:
+#+title: Radians & degrees
+#+filetags: :topic:
+* Definition
+** What is a radian?
+A /radian/ is a unit for measuring angles based on the radius of a circle.
+It is defined as the angle at the center of a circle that subtends an arc whose length is equal to the radius of the circle.
+
+* Key Points
+** Why use radians
+Radians provide a mathematically natural way to measure angles because they relate directly to the geometry of the circle and arc length.
+In Calculus and higher mathematics, many formulas (e.g., derivatives of trig functions) are simplest when angles are expressed in radians.
+
+** Relationship to circle measurements
+- One complete revolution around a circle corresponds to:
+  - \(360^{{\circ}}\)
+  - \(2\pi\) radians in radian measure
+  - Therefore \(360^{\circ} = 2\pi\) radians and \(180^{\circ}=\pi\) radians.
+
+** Conversion formulas
+- Degrees to Radians: \(\text{radians} = \text{degrees} \times \frac{\pi}{180}\)
+
+- Radians to Degrees: \(\text{degrees} = \text{radians} \times \frac{180}{\pi}\)
+
+** Intuitive understanding
+Since radians are based on the arc length relative to the radius:
+- If the arc length = radius, the angle = 1 radian.
+- A full circle has circumference \(2\pi r\), which corresponds to \(2\pi\) radians when \(r\) is factored out.
+- Conversions (Standard Values)
+
+* Related Concepts
+- [[id:30c45d58-e4b5-499e-93c5-ff542818b0ff][Trigonometric ratios in right triangles]]
+- [[id:5c9a2bdc-89cb-45ff-a0b7-70b2e668288d][Reciprocal trig ratios]]
+- [[id:f1090bac-bf09-4567-841c-0267f1ff5e57][Unit Circle]]

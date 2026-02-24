@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       30c45d58-e4b5-499e-93c5-ff542818b0ff
+:END:
+#+title: Trigonometric ratios in right triangles
+#+filetags: :topic:
+* Key Points
+- The ratios of the sides of a right angle triangle are called trigonometric ratios.
+
+  Three common trigonometric ratios are:
+  - *sine(sin)*
+  - *cosine(cos)*
+  - *tangent(tan)*
+
+- The following are defined for an acute angle:
+  - \(\sin(A) = \dfrac{\text{opposite}}{hypotenuse}\)
+
+  - \(\cos(A) = \dfrac{\text{adjacent}}{\text{hypotenuse}}\)
+
+  - \(\tan(A)=\dfrac{\text{opposite}}{\text{adjacent}}\)

@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       f2871a4b-87ff-4d39-abcf-dd1cb30e9b41
+:END:
+#+title: Grouping
+#+filetags: :topic:
+* Key Points
+In general, we can use the following steps to factor a quadratic of the form: \(ax^2 +bx +c\)
+
+1. Start by finding two numbers that multiply to \(ac\) and add to \(b\).
+2. Use these numbers to split up the \(x\) term.
+3. Use grouping to factor the quadratic expression
+
+* Examples
+** Example 1
+Factor \(3x^2 + 10x +8\).
+
+   \begin{align*}
+   24  &= 6 \times 4 \\
+       &= 3x^{2} +6x +4x + 8 \\
+       &= 3x(x + 2)+4(x + 2) \\
+       &= (3x+4)(x+2)
+   \end{align*}
+
+* Related Concepts
+- [[id:f8bc4ccc-55ea-4249-925b-14f7c4763385][Factors and Divisibility]]

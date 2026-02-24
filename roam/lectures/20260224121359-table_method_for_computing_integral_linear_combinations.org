@@ -1,0 +1,89 @@
+:PROPERTIES:
+:ID:       c3576183-80f4-4db4-9182-13ce1788a337
+:END:
+#+title: Table Method for Computing Integral Linear Combinations
+#+filetags: :lecture:
+* Definition
+The table method is a systematic procedure used to compute integers \(x\) and \(y\) such that
+
+\[
+\gcd(a,b) = ax + by
+\]
+
+for integers \(a\) and \(b\) not both zero. It is a structured form of the extended Euclidean algorithm.
+
+* Foundational Lemma
+If \(a = qb + r\), then
+
+\[
+\gcd(a,b) = \gcd(b,r).
+\]
+
+This lemma allows repeated replacement of a pair by a smaller pair until a remainder of \(0\) is obtained.
+
+* Algorithm
+Given integers \(a\) and \(b\):
+
+1. Apply the Euclidean algorithm to compute successive remainders.
+2. Record each remainder.
+3. Construct a table expressing each remainder as a linear combination of \(a\) and \(b\).
+4. The last nonzero remainder is \(\gcd(a,b)\).
+5. The corresponding row provides integers \(x,y\) such that
+   \[
+   ax + by = \gcd(a,b).
+   \]
+
+* Example
+Find integers \(x\) and \(y\) such that
+\(\gcd(2026,271) = 2026x + 271y\).
+
+** Step 1 — Euclidean Algorithm
+\begin{align*}
+2026 &= 7(271) + 129\\
+271  &= 2(129) + 13\\
+129  &= 9(13) + 12\\
+13   &= 1(12) + 1\\
+12   &= 12(1) + 0
+\end{align*}
+
+\[
+\gcd(2026,271) = 1
+\]
+
+** Step 2 — Table Construction
+Each value is written as a linear combination of \(2026\) and \(271\).
+
+\begin{array}{c|cc}
+\text{Value} & 2026 & 271 \\\hline
+2026 & 1 & 0 \\
+271  & 0 & 1 \\
+129  & 1 & -7 \\
+13   & -2 & 15 \\
+12   & 19 & -142 \\
+1    & -21 & 157
+\end{array}
+
+** Step 3 — Result
+
+\[
+1 = -21(2026) + 157(271)
+\]
+
+Thus,
+\[
+x = -21,\quad y = 157.
+\]
+
+* Why the Method Works
+Each remainder is computed from previous remainders. Since earlier values are already written as linear combinations of \(a\) and \(b\), substitution ensures every new remainder is also a linear combination of \(a\) and \(b\). Therefore the final nonzero remainder, which equals \(\gcd(a,b)\), must also have this form.
+
+* Properties
+- The algorithm always terminates after finitely many steps.
+- A solution \(x,y\) always exists.
+- If \(\gcd(a,b)=1\), then \(1\) can be written as a linear combination of \(a\) and \(b\).
+- The coefficients are not unique.
+
+* Related Concepts
+- [[id:2aed9acc-0773-44ce-8761-6039c511c1b6][Euclidean Algorithm]]
+- [[id:8ff72bab-e30c-4a8c-adf8-b3e8d8fefa28][Bezout's Identity]]
+- [[id:be0dc7a5-4436-4403-867e-daa060b8c469][Integral Linear Combination]]

@@ -1,0 +1,40 @@
+:PROPERTIES:
+:ID:       57807ef5-70ed-414a-af25-d999dcaac953
+:END:
+#+title: Composing Functions
+#+filetags: :topic:
+* Definition
+In general, to indicate function \(f\) composed with function \(g\), we can write \(f \circ g\),
+read as "\(f\) composed with \(g\)".
+
+This composition is defined by the following rule:
+
+\((f \circ g)(x) = f(g(x))\)
+
+* Key Points
+\((f \circ g)(x) \neq (g \circ f)(x)\)
+
+* Examples
+** Example 1
+\(g(x)=x+4\)
+\(h(x) = x^2 - 2x\)
+
+Find \((h \circ g)(x)\):
+\begin{align*}
+h(g(x)) &= (x+4)^{2} - 2(x + 4) \\
+        &= (x + 4)(x + 4) - 2x - 8 \\
+        &= x^{2} + 4x + 4x + 16 - 2x - 8 \\
+        &= x^{2} + 6x + 8
+\end{align*}
+
+** Example 2
+If \(f(x) = 3x - 1\) and \(g(x) = x^3 + 2\), then what is \(f(g(3))\)$?
+
+\begin{align*}
+f(g(3)) &= 3(x^{3} + 2) - 1 \\
+&= 3x^{3} + 6 - 1 \\
+&= 3x^{3} + 5 \\
+&= 3(3)^{3} + 5 \\
+&= 3(27) + 5 \\
+&= 86
+\end{align*}

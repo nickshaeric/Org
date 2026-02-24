@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       ee832f7d-b197-48b0-b1c3-50c097b08516
+:END:
+#+title: Indirect Proof
+#+filetags: :lecture:
+* Lecture Notes
+To prove a statement \(P\) by contradiction, we suppose \(\neg P\), get a contradiction and conclude \(P\).
+
+We likely use this type of proof when:
+1. What we prove means "\(P\), not \(Q\)"
+2. We fail to prove it directly
+
+When we prove a number is irrational or a set is empty, it should be proven by contradiction.
+
+* Key Concepts
+- [[id:71d0c22e-b7e7-4dfe-ab4b-89736fd69161][Rational & Irrational Numbers]]
+- [[id:b17589ed-31f9-4ef4-94e3-12cbf78537cd][Root 2 Is Irrational]]
+
+* Examples
+** Example 1
+\(\forall n \in \mathbb{Z}\), if \(n^{2}\) is even, then \(n\) is even.
+Proof. Suppose \(n\) is an integer.
+Suppose that \(n^{2}\) is even, that is \(n^{2}=2k\) for some integer \(k\).
+We prove by contradiction that \(n\) is even.
+Suppose \(n\) is odd, then \(n=2k+1\) for some integer \(k\) and so \(n^{2}={(2k+1)}^{2}=4k^{2}+4k+1=2{(2k^{2}+2k)}+1\) where \(2k^{2}+2k\) is an integer.
+Thus, \(n^{2}\) is odd which contradicts the assumption that \(n^{2}\) is even.
+Hence, \(n\) is even.

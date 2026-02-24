@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       57005d63-1b06-44ad-8d0f-7f72168e9f2f
+:END:
+#+title: Statements & Negation
+#+filetags: :lecture:
+* Lecture Notes
+** Definitions
+A /Statement/ = A meaningful sentence that is either true or false.
+
+A /Proof/ = An explanation of why a statement is true or false.
+
+/Negation/ = The operation that takes a statement and produces its opposite.
+
+If a statement $P$ is true, its negation, denoted $\neg P$, is false, and vice versa;
+often represented in logical terms as $\neg P \equiv \text{not} P$.
+
+* Key Concepts
+- [[id:e9484f3a-41d2-4938-bf92-461b58c4d2a8][Logic & Statements]]

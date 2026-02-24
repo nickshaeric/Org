@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       f8bc4ccc-55ea-4249-925b-14f7c4763385
+:END:
+#+title: Factors and Divisibility
+#+filetags: :topic:
+* Definition
+Monomial: An expression that is the product of constants and nonnegative integer powers of \(x\), like \(3x^{2}\).
+
+Polynomial: An expression that consists of a sum of monomials, like \(3x^2 + 6x - 1\).
+
+* Key Points
+When two or more polynomials are multiplied, we call each of these polynomials factors of the product.
+
+In general, to determine whether one polynomial \(p\) is divisible by another polynomial \(q\), or equivalently whether \(q\) is a factor of \(p\), we can find and examine \(\dfrac{p(x)}{q(x)}\).
+** Factoring quadratics: leading coefficient = 1
+Factoring a polynomial involves expressing it is as a product of two or more polynomials.
+
+*** Summary
+In general, to factor a trinomial of the form \(x^2 + bx + c\), we need to find factors of \(c\) such that their sum is \(b\).
+
+** Sum-product pattern
+\begin{align*}
+(x +m)(x+n) &= (x +m)(x) + (x+m)(n) \\
+&= x^{2} + mx + nx  + m \cdot n \\
+&= x^{2} + m(n + x) + m \cdot n
+\end{align*}
+
+The resulting equation:
+\((x+m)(x+n) = x^{2} + (m \cdot n)x + m \cdot n\)
+
+* Related Concepts
+- [[id:57807ef5-70ed-414a-af25-d999dcaac953][Composing Functions]]

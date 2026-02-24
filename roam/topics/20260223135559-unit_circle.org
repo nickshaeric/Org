@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       f1090bac-bf09-4567-841c-0267f1ff5e57
+:END:
+#+title: Unit Circle
+#+filetags: :topic:
+* Definition
+** What is the unit circle definition of the trigonometric functions?
+The unit circle definition allows us to extend the domain of sine and cosine to *all real numbers*.
+* Key Points
+** Process for determining the sine/cosine of any angle $\theta$
+1. Starting from \({(1,0})\), move along the unit circle in the counterclockwise direction until the angle that is formed between your position, the origin, and the positive \(x\)-axis is equal to \(\theta\).
+2. \(\sin {(\theta)}\) is equal to the \(y\)-coordinate of your point, and \(\cos{(\theta)}\) is equal to the \(x\)-coordinate.
+
+The other trigonometric functions can be evaluated using their relation with sine and cosine.
+
+$${(x,y)} = \left\{
+\begin{array}{ll}
+\cos \theta = \text{x-coordinate} \\
+\sin \theta = \text{y-coordinate}
+\end{array}$$
+
+* Related Concepts
+- [[id:30c45d58-e4b5-499e-93c5-ff542818b0ff][Trigonometric ratios in right triangles]]
+- [[id:5c9a2bdc-89cb-45ff-a0b7-70b2e668288d][Reciprocal trig ratios]]

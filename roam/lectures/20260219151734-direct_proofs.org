@@ -1,0 +1,46 @@
+:PROPERTIES:
+:ID:       1f554270-74b0-4270-b563-6e28c907d6d1
+:END:
+#+title: Direct Proofs
+#+filetags: :lecture:
+* Lecture Notes
+** Integers & Natural Numbers
+The integers are the positive, the negative whole numbers, and zero.
+That is the set of integers, denoted $\mathbb{Z}$ is
+$\mathbb{Z}=\{\ldots,-3,-2,-1,0,1,2,3,\ldots\}$
+
+The natural numbers are the positive whole numbers.
+That is the set of natural numbers, denoted by $\mathbb{N}$ or $\mathbb{Z}^{+}$ is
+$\mathbb{N}=\{1,2,3,\ldots\}$
+
+* Key Concepts
+** Even & Odd
+- Definition: An integer $n$ is even $\iff n=2k$ for some integer $k$.
+- Definition: An integer $n$ is odd $\iff n=2k+1$ for some integer $k$.
+
+* Examples
+** Example 1
+For all integers $n$, if $n$ is even then $n^2$ is even.
+
+Answer: True
+Proof: Suppose $n \in \mathbb{Z}$. Suppose $n$ is even.
+Since $n$ is even, $n=2k$ for some integer $k$.
+Now, $n^2=(2k)^2=2(2k^2)$ where $2k^2$ is an integer, so $n$ is even.
+** Example 2
+For all integers $n$, there exists an integer $m$ such that $n+m$ is even.
+
+Answer: True
+Proof: Suppose $n \in \mathbb{Z}$. Choose $m = 6 - n$, then $m \in \mathbb{Z}$ and
+$m + n = (6 - n) + m = 6 = 2 \times 3$ where $3 \in \mathbb{Z}$, so $m + n$ is even.
+** Example 3
+There exists an integer $m$, such that for all integers $n$, $n + m$ is even.
+
+Answer: False
+Negation: For all integers $m$, there exists an integer $n$ such that
+$n+m$ is odd.
+Proof: Suppose $m \in \mathbb{Z}$. Choose $n = 3 - m$, then $n \in \mathbb{Z}$ and
+$n + m = (3 - m) + m = 3 = 2(1) + 1$ where $1 \in \mathbb{Z}$, so $n + m$ is odd.
+
+* Related Concepts
+- [[id:57005d63-1b06-44ad-8d0f-7f72168e9f2f][Statements & Negation]]
+- [[id:fa909f33-0197-4231-9197-c738d9eb9011][Converse & Contrapositive]]

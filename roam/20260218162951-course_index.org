@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       167b2ae5-b0cc-421b-bd6b-cfabc0c4ac83
+:END:
+#+title: Course Index
+* Winter 2026
+- [[id:da52b10d-2af1-417f-803a-876de5d3adf8][CPSC231 - Introduction to Computer Science for Computer Science Majors I]]
+- [[id:84ff1e9d-bdbe-47f9-8130-4ae80f5fbb28][CPSC329 - Explorations in Information Security and Privacy]]
+- [[id:354d6ffc-707c-4b60-be75-662e0b493ff5][MATH271 - Discrete Mathematics]]
+- [[id:6693754d-8d79-422f-b44f-4b921fcaf69e][PHIL279 - Logic I]]
+* Self-Study
+- [[id:f497387c-eafe-4900-93c5-bfd4779e6afc][Pre-Calculus]]
+- [[id:06a6df46-6660-45ef-851c-6d8a85347e1b][Differential Calculus]]
+- [[id:8f9ae584-17bc-4efd-80bc-caf3351a40f3][Linear Algebra]]

@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       0ae79b43-d765-46cb-b503-2354a52a5453
+:END:
+#+title: Factoring quadratics: Perfect squares
+#+filetags: :topic:
+* Key Points
+- Factoring a polynomial involves writing it as a product of two polynomials.
+  - It reverses the process of polynomial multiplication.
+
+** Intro: Factoring perfect sqaure trinomials
+To expand any binomial, we can apply one of the following patterns.
+- \((a + b)^{2} = a^{2} + 2ab + b^{2}\)
+- \((a - b)^{2} = a^{2} - 2ab + b^{2}\)
+
+The reverse of this expansion process is a form of factoring.
+Pattern for factoring polynomials of the form \(a^2 \pm 2ab + b^2\):
+- \(a^2 + 2ab + b^2 = (a + b)^2\)
+- \(a^2 - 2ab + b^2 = (a - b)^2\)
+
+* Related Concepts
+- [[id:ab1aeffa-cd3e-4e16-b6bb-a33b2a115de8][Factoring quadratics: Difference of squares]]

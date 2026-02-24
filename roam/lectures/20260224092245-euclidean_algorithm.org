@@ -1,0 +1,45 @@
+:PROPERTIES:
+:ID:       2aed9acc-0773-44ce-8761-6039c511c1b6
+:END:
+#+title: Euclidean Algorithm
+#+filetags: :lecture:
+* Lecture Notes
+Euclidean Algorithm = An algorithm used to compute \(\gcd{(a,b)}\).
+
+\(\gcd{(a,b)}\) = The [[id:010125cd-5767-44d0-9dcf-bd3453bf8cde][Greatest Common Divisor]] of \(a\) and \(b\).
+
+- \(\gcd{(a,0)} = a\), when \(a>0\).
+- The algorithm repeatedly applies the division algorithm:
+  \(a=bq+r\), where \(0 \le r < \left| b  \right|\).
+
+** Computing a [[id:be0dc7a5-4436-4403-867e-daa060b8c469][Integral Linear Combination]]
+The table method is a structured extension of the Euclidean Algorithm that computes coefficients \(x,y\) such that \(\gcd(a,b)=ax+by\).
+[[id:c3576183-80f4-4db4-9182-13ce1788a337][Table Method for Computing Integral Linear Combinations]]
+
+* Key Concepts
+** Definition
+Let \(a\) and \(b\) be integers such that not both are zero.
+The Euclidean Algorithm computes \(\gcd{(a,b)}\) by repeatedly replacing \((a,b)\) with \((b,r)\) where \(r\) is the remainder when \(a\) si divided by \(b\).
+
+The process terminates when the remainder becomes \(0\).
+The last nonzero remainder is the greatest common divisor.
+
+** Notes
+- Each step strictly decreases the remainder.
+- The algorithm always terminates after finitely many steps.
+- The method works for any integer (not both zero).
+
+* Examples
+** Example 1
+\(\gcd(98,72)\)
+
+\begin{align*}
+98 &= 1(72)+26\\
+72 &= 2(26)+20\\
+26 &= 1(20)+6\\
+20 &= 3(6)+2\\
+6  &= 3(2)+0
+\end{align*}
+
+\[\gcd{(98,72)}=2\]
+

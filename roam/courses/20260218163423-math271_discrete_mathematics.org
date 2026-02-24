@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       354d6ffc-707c-4b60-be75-662e0b493ff5
+:END:
+#+title: MATH271 - Discrete Mathematics
+#+filetags: :course:
+* Course Info
+- Instructor: Dr. Thi Dinh
+- Term: Winter 2026
+
+* Week 1
+** Lecture 1: [[id:57005d63-1b06-44ad-8d0f-7f72168e9f2f][Statements & Negation]]
+** Lecture 2: [[id:fa909f33-0197-4231-9197-c738d9eb9011][Converse & Contrapositive]]
+** Lecture 3: [[id:1f554270-74b0-4270-b563-6e28c907d6d1][Direct Proofs]]
+
+* Week 2
+** Lecture 1: [[id:1bbe95ef-e160-48a2-9813-0860aa228335][Divisibility]]
+** Lecture 2: [[id:cac591f0-5552-49a3-95bc-fe0984a6c77e][Divisibility & Modulo]]
+** Lecture 3: [[id:d0f592ee-c68f-4513-8d78-7b9d99366fee][Prime & Composite]], [[id:f2faf10f-62e4-45ee-b75f-536924e6eda9][Floor & Ceiling]]
+
+* Week 3
+** Lecture 1: [[id:ee832f7d-b197-48b0-b1c3-50c097b08516][Indirect Proof]]
+** Lecture 2: [[id:2aed9acc-0773-44ce-8761-6039c511c1b6][Euclidean Algorithm]]
+** Lecture 3: [[id:c3576183-80f4-4db4-9182-13ce1788a337][Table Method for Computing Integral Linear Combinations]]
+
+* Week 4
+** Lecture 1: [[id:24835a98-2bcc-499d-aadb-b489a7a3b899][Introduction to Induction]]

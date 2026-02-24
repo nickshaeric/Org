@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       f497387c-eafe-4900-93c5-bfd4779e6afc
+:END:
+#+title: Pre-Calculus
+#+filetags: :course:
+* Course Info
+- Instructor: Self-Taught
+- Term: Self-Study
+
+* Units
+- [[id:27f0d6a0-4287-4139-986c-19d5a7ee0160][Unit 1: Get ready for limits and continuity]]

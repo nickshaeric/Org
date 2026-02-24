@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       72e77390-d250-4a6c-a2db-c2bae9319f4c
+:END:
+#+title: Quotient-Remainder Theorem
+#+filetags: :topic:
+* Definition
+** Quotient–Remainder Theorem
+Theorem: For all integers $n$ and $d$, where $d > 0$, there exist *unique* integers $q$ and $r$ such that $n = qd + r \quad \text{and} \quad 0 \le r < d$.
+
+Notation: $n \bmod d$
+
+- $q$ = quotient when $n$ is divided by $d$
+- $r$ = remainder when $n$ is divided by $d$

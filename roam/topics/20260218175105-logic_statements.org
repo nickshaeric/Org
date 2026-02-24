@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       e9484f3a-41d2-4938-bf92-461b58c4d2a8
+:END:
+#+title: Logic & Statements
+#+filetags: :topic:
+* Definition
+** Logical Definitions
+"$P$ and $Q$" is true $\iff P$ is true and $Q$ is true.
+"$P$ and $Q$" is false $\iff P$ is false, $Q$ is false, or both $P$ and $Q$ are false.
+
+"$P$ or $Q$" is true $\iff P$ is true, $Q$ is true or $P$ and $Q$ are true.
+"$P$ or $Q$" is false $\iff P$ is false and $Q$ is false.
+
+"If $P$, then $Q$" is false $\iff P$ is true and $Q$ is false.
+Otherwise the statement is true.
+
+"$P \iff Q$" is true $\iff P$ and $Q$ have the same truth value.
+"$P \iff Q$" is false $\iff P$ and $Q$ have the opposite truth values.
+
+* Key Points
+- The symbol: $\forall$ means "for all" or "for every"; "universal quantifier"
+- The symbol: $\exists$ means "there exists"; "existential quantifier"
+
+Statement: $P \text{ and } Q \Rightarrow$ Negation: $\neg P \text{ or } \neg Q$
+Statement: $P \text{ or } Q \Rightarrow$ Negation: $\neg P \text{ and } \neg Q$
+Statement: $\text{If } P, \text{ then } Q \Rightarrow$ Negation: $P \text{ and } \neg Q$
+Statement: $\forall P, Q \Rightarrow$ Negation: $\exists P, \text{ such that } \neg Q$
+Statment: $\exists P, Q \Rightarrow$ Negation: $\forall P, \neg Q$
+
+* Examples
+$P(x)$ is the statement "$x$ is even", where $x$ is a variable that can take values in $\mathbb{Z}$.
+In this case, $P(4)$ is the statement "$4$ is even" and is true.
+$P(7)$ is the statement "$7$ is even" and is false.

@@ -1,0 +1,53 @@
+:PROPERTIES:
+:ID:       5c9a2bdc-89cb-45ff-a0b7-70b2e668288d
+:END:
+#+title: Reciprocal trig ratios
+#+filetags: :topic:
+* Key Points
+We've already learned the basic trig ratios:
+- \(\sin(A) = \dfrac{\text{opposite}}{\text{hypotenuse}}\)
+
+- \(\cos(A) = \dfrac{\text{adjacent}}{\text{hypotenuse}}\)
+
+- \(\tan(A) = \dfrac{\text{opposite}}{\text{adjacent}}\)
+
+But there are three more ratios to think about:
+- Instead of \(\dfrac{\text{opposite}}{\text{hypotenuse}}\), we can consider \(\dfrac{\text{hypotenuse}}{\text{opposite}}\)
+
+- Instead of \(\dfrac{\text{adjacent}}{\text{hypotenuse}}\), we can consider \(\dfrac{\text{hypotenuse}}{\text{adjacent}}\)
+
+- Instead of \(\dfrac{\text{opposite}}{\text{adjacent}}\), we can consider \(\dfrac{\text{adjacent}}{\text{opposite}}\)
+
+These new ratios are the *reciprocal trig ratios*:
+- Cosecant: Reciprocal of sine.
+  It is the ratios of the hypotenuse to the side opposite of a given angle in a right triangle.
+
+  \(\sin(A) = \dfrac{\text{opposite}}{\text{hypotenuse}}\)
+
+  \(\csc(A) = \dfrac{\text{hypotenuse}}{\text{opposite}}\)
+
+- Secant: Reciprocal of the cosine.
+  It is the ratios of the hypotenuse to the side adjacent to a given angle in a right triangle.
+
+  \(\cos(A) = \dfrac{\text{adjacent}}{\text{hypotenuse}}\)
+
+  \(\sec(A) = \dfrac{\text{hypotenuse}}{\text{adjacent}}\)
+
+- Cotangent: Reciprocal of the tangent.
+  It is the ratio of the adjacent side to the opposite side in a right triangle.
+
+  \(\tan(A) = \dfrac{\text{opposite}}{\text{adjacent}}\)
+
+  \(\cot(A) = \dfrac{\text{adjacent}}{\text{opposite}}\)
+
+** How to remember
+It's easiest to remember these new ratios by relating them to their reciprocals.
+
+- \(\csc(A) = \dfrac{1}{\sin(A)}\)
+
+- \(\sec(A) = \dfrac{1}{\cos(A)}\)
+
+- \(\cot(A) = \dfrac{1}{\tan(A)}\)
+
+* Related Concepts
+- [[id:30c45d58-e4b5-499e-93c5-ff542818b0ff][Trigonometric ratios in right triangles]]

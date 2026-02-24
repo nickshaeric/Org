@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       71d0c22e-b7e7-4dfe-ab4b-89736fd69161
+:END:
+#+title: Rational & Irrational Numbers
+#+filetags: :topic:
+* Definition
+** Rational Number
+A real number \(x\) is rational \(\iff \exists m, n \in \mathbb{Z}\) so that \(n \ne 0\) and \(x=\dfrac{m}{n}\).
+
+*** Formal Definition
+Let \(\mathbb{Q}\) denote the set of all rational numbers.
+
+\[
+\mathbb{Q} = \left\{ \frac{a}{b} \mid a,b \in \mathbb{Z},\ b \ne 0 \right\}
+\]
+
+** Irrational Number
+A real number \(x\) is irrational \(\iff x\) is not rational.

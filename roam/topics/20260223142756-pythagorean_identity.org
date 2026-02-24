@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       78684e72-c3e3-4d77-831c-12cbec9898b3
+:END:
+#+title: Pythagorean identity
+#+filetags: :topic:
+* Definition
+Pythagorean Identity: \({\sin{(\theta)}}^2+{\cos{(\theta)}}^2=1\)
+
+* Key Points
+The identity is used for all real values of \(\theta\).
+It is a result of applying the Pythagorean theorem on the right triangle that is formed in the unit circle for each $\theta$.
+
+* Related Concepts
+- [[id:30c45d58-e4b5-499e-93c5-ff542818b0ff][Trigonometric ratios in right triangles]]
+- [[id:5c9a2bdc-89cb-45ff-a0b7-70b2e668288d][Reciprocal trig ratios]]
+- [[id:f1090bac-bf09-4567-841c-0267f1ff5e57][Unit Circle]]
+- [[id:912f4ed1-a567-4446-8902-d4279536ba4d][Radians & degrees]]

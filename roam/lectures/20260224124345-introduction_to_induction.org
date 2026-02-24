@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       24835a98-2bcc-499d-aadb-b489a7a3b899
+:END:
+#+title: Introduction to Induction
+#+filetags: :lecture:
+* Lecture Notes
+
+* Key Concepts
+
+* Examples

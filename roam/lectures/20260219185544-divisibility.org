@@ -1,0 +1,71 @@
+:PROPERTIES:
+:ID:       1bbe95ef-e160-48a2-9813-0860aa228335
+:END:
+#+title: Divisibility
+#+filetags: :lecture:
+* Lecture Notes
+** Definition
+- Divisibility: $a,b \in \mathbb{Z}$
+  $a \mid b \iff a \ne 0$ and $b=ak$ for some integer $k$.
+  $a \mid b$ = "$b$ is divisible by $a$"
+        "$a$ is a divisor of $b$"
+        "$b$ is a mulitple of $a$"
+
+* Key Concepts
+- Basic Properties of Divisibility
+  - If $a \mid b$ and $a \mid c$, then $a \mid (mb + nc)$ for any $m,n \in \mathbb{Z}$.
+  - If $a \mid b$, then $a \mid bc$ for any $c \in \mathbb{Z}$.
+  - If $a \mid b$ and $b \mid c$, then $a \mid c$.
+
+- Reflexive & Unit Facts
+  - $a \mid a$ for all $a \ne 0$.
+  - $1 \mid a$ for all integers $a$.
+  - $a \mid 0$ for all $a \ne 0$.
+
+- Sign Rules
+  - If $a \mid b$, then $a \mid (-b)$ and $(-a) \mid b$.
+  - Divisibility ignores sign: divisors can be positive or negative.
+
+- Prime Connection
+  - If $p$ is prime and $p \mid bc$, then $p \mid b$ or $p \mid c$.
+
+- Divisibility as an Algebraic Condition
+  - Showing $a \mid b$ means: find an integer $k$ such that $b = ak$.
+
+- Proof Strategy Reminder
+  - To prove divisibility: start from the definition and construct the integer.
+  - To disprove a divisibility statement: find a counterexample.
+
+* Examples
+** Example 1
+$\forall a,b,c \in \mathbb{Z}$, if $a \mid b$ and $b \mid c$, then $a \mid bc$.
+Answer: True
+
+Proof: Suppose $a,b,c \in \mathbb{Z}$.
+Suppose $a \mid b$, that is $a \ne 0$ and $\exists x \in \mathbb{Z}$ such that $b=ax$.
+Suppose $b \mid c$, that is $b \neq 0$ and $\exists y \in \mathbb{Z}$ such that $c = by$.
+$c = by = axy$, let $k = xy$, $k \in \mathbb{Z}$ therefore $c = ak$. Since $a$
+is a factor of $c$, $a \mid c$.
+
+** Example 2
+$\forall a,b,c \in \mathbb{Z}$, if $a \mid bc$, then $a \mid b$ or $a \mid c$.
+Answer: False
+Negation: $\exists a,b,c \in \mathbb{Z}$ such that $a \mid bc$, but $a \nmid b$ and $a \nmid c$.
+
+Proof: Let $a=6$, $b=2$, and $c=3$, where $a,b,c \in \mathbb{Z}$ and $a \ne 0$.
+$a \mid bc = 6 \mid (2)(3) = 6 \mid 6 \implies \exists x \in \mathbb{Z}$ such that $6=6x$,
+let $x=1$, where $1 \in \mathbb{Z}$, therefore $6=6(1)$.
+But, $6 \nmid 2$, since there does not exists an integer $y$ such that $2=6y$ and $6 \nmid 3$ since there does not exists an integer $z$ such that $3=6z$, therefore the original statement is false by negation.
+
+** Example 3
+$\forall a, b, c \in \mathbb{Z}$, if $a \mid b$ and $a \mid c$, then $a \mid b + c$ and $a \mid b - c$.
+Answer: True
+
+Proof: Suppose $a,b,c \in \mathbb{Z}$. Suppose $a \mid b$ and $a \mid c$, that is $a \ne 0$ and $\exists x,y \in \mathbb{Z}$ such that $b=ax$ and $c=ay$.
+Then $b+c=ax+ay=a(x+y)$, since $a$ is a factor of $b+c$, $a \mid b+c$.
+Likewise, $b-c=ax-ay=a(x-y)$, since $a$ is a factor $b-c$, $a \mid b-c$.
+
+* Connected Topics
+- [[id:57005d63-1b06-44ad-8d0f-7f72168e9f2f][Statements & Negation]]
+- [[id:fa909f33-0197-4231-9197-c738d9eb9011][Converse & Contrapositive]]
+- [[id:1f554270-74b0-4270-b563-6e28c907d6d1][Direct Proofs]]

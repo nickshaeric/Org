@@ -1,0 +1,38 @@
+:PROPERTIES:
+:ID:       b17589ed-31f9-4ef4-94e3-12cbf78537cd
+:END:
+#+title: Root 2 Is Irrational
+#+filetags: :topic:
+* Proof
+Prove \(\sqrt{2} \notin \mathbb{Q}\)
+
+Proof by contraditcion.
+Suppose \(\sqrt{2}\) is rational, that is \(\sqrt{2}=\dfrac{m}{n}\), where \(m\) and \(n\) are integers,
+\(n \ne 0\) and \(gcd{(m,n)}=1\).
+
+Then,
+\begin{align*}
+\sqrt{2} &= \frac{m}{n} \\
+\left(\sqrt{2}\right)^{2} &= \frac{m^{2}}{n^{2}} \\
+2 &= \frac{m^{2}}{n^{2}} \\
+2n^{2} &= m^{2}
+\end{align*}
+
+\(m^{2}=2n^{2}\) shows that \(m^{2}\) is even.
+Hence \(m\) is even, which is \(m=2k\) for some integer \(k\).
+
+\begin{align*}
+2n^{2} &= {(2k)}^{2} \\
+2n^{2} &= 4k^{2} \\
+\frac{2n^{2}}{2} &= \frac{4k^{2}}{2} \\
+n^{2} &= 2k^{2}
+\end{align*}
+
+\(n^{2}=2k^{2}\) shows that \(n^{2}\) is even.
+Hence \(n\) is even, which contradicts \(\gcd{(m,n)}=1\).
+
+Thus, \(\sqrt{2} \notin \mathbb{Q}\).
+
+* Related Concepts
+- [[id:71d0c22e-b7e7-4dfe-ab4b-89736fd69161][Rational & Irrational Numbers]]
+- [[id:010125cd-5767-44d0-9dcf-bd3453bf8cde][Greatest Common Divisor]]

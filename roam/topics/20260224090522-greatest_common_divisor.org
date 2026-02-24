@@ -1,0 +1,48 @@
+:PROPERTIES:
+:ID:       010125cd-5767-44d0-9dcf-bd3453bf8cde
+:END:
+#+title: Greatest Common Divisor
+#+filetags: :topic:
+* Definition
+Let \(a, b \in \mathbb{Z}\) not both zero.
+The greatest common divisor of \(a\) and \(b\) is the *unique* integer \(d\) with the following properties:
+1. \(d \mid a\) and \(d \mid b\)
+2. \(\forall c \in \mathbb{Z}\), if \(c \mid a\) and \(c \mid b\), then \(c \le d\).
+
+* Notation
+For integers \(x\) and \(y\), the greatest common divisor is written as: \(\gcd(x,y)\)
+
+* Key Properties
+1. Divisibility
+   \(d = \gcd(x,y) \iff d \mid x \text{ and } d \mid y\)
+
+2. Symmetry
+   \(\gcd(x,y) = \gcd(y,x)\)
+
+3. Non-negativity
+   \(\gcd(x,y) \ge 0\)
+   (By convention, gcd is always taken to be nonnegative.)
+
+4. Linear Combination Property
+   \(\gcd(x,y) = ax + by\)
+   for some integers \(a,b\) ([[id:8ff72bab-e30c-4a8c-adf8-b3e8d8fefa28][Bezout's Identity]]).
+
+* Edge Cases
+1. One argument zero
+   \(\gcd(a,0) = |a| \quad \text{for } a \ne 0\)
+
+2. Both zero
+   \(\gcd(0,0) \text{ is undefined}\)
+   (Some texts define it as 0, but this is not standard.)
+
+3. Unit values
+   \(\gcd(a,1) = 1\)
+
+4. Coprime integers
+   \(\gcd(a,b) = 1 \iff a \text{ and } b \text{ are relatively prime}\)
+
+* Examples
+\(\gcd(12,18) = 6\)
+\(\gcd(7,13) = 1\)
+\(\gcd(24,0) = 24\)
+\(\gcd(-8,12) = 4\)

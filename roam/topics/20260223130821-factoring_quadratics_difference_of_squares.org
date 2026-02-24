@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       ab1aeffa-cd3e-4e16-b6bb-a33b2a115de8
+:END:
+#+title: Factoring quadratics: Difference of squares
+#+filetags: :topic:
+* Definition
+- Every polynomial that is a difference of squares can be factored by applying the following formula: \(a^2 - b^2 = (a + b)(a - b)\)
+
+* Key Points
+- Factoring a polynomial involves writing it as a product of two or more polynomials.
+  - It reverses the process of polynomial multiplication.
+
+* Examples
+** Example 1
+Factoring \(x^2 - 16\)
+   Both \(x^{2}\) and \(16\) are perfect squares, since \(x^2 = (x)^2\) and \(16 = (4)^2\).
+
+   Therefore, \(x^2 - 16 = (x)^2 - (4)^2\)
+
+   Since two sqaures are being subtracted, we can see that this polynomial
+   represents a /difference of squares/.
+
+   Therefore, \(x^2 - 16 = (x+4)(x-4)\)
+
+* Related Concepts
+- [[id:f8bc4ccc-55ea-4249-925b-14f7c4763385][Factors and Divisibility]]
+- [[id:f2871a4b-87ff-4d39-abcf-dd1cb30e9b41][Grouping]]

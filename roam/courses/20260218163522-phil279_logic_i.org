@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       6693754d-8d79-422f-b44f-4b921fcaf69e
+:END:
+#+title: PHIL279 - Logic I
+#+filetags: :course:
+* Course Info
+- Instructor:
+- Term: Winter 2026
+
+* Lecture 1
+
+* Assignments

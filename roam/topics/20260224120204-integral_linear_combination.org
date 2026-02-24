@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       be0dc7a5-4436-4403-867e-daa060b8c469
+:END:
+#+title: Integral Linear Combination
+#+filetags: :topic:
+* Definition
+An *intergral linear combination* of \(a\) and \(b\) us an integer of the form \(ax+by\), where \(x,y \in \mathbb{Z}\).
+
+* Key Points
+- The set of all integral linear combinations of \(a\) and \(b\) is exactly the set of multiples of \(\gcd(a,b)\).
+
+* Related Concepts
+- [[id:8ff72bab-e30c-4a8c-adf8-b3e8d8fefa28][Bezout's Identity]]
+- [[id:2aed9acc-0773-44ce-8761-6039c511c1b6][Euclidean Algorithm]]

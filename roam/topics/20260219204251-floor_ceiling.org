@@ -1,0 +1,38 @@
+:PROPERTIES:
+:ID:       f2faf10f-62e4-45ee-b75f-536924e6eda9
+:END:
+#+title: Floor & Ceiling
+#+filetags: :topic:
+* Definition
+** Basic Bounds
+For all $x \in \mathbb{R}$:
+*** Floor
+$\lfloor x \rfloor = n \iff n \in \mathbb{Z}$ and $n \leq x < n + 1$.
+
+Notation: $\lfloor x \rfloor =$ the floor of $x$.
+
+*** Ceiling
+$\lceil x \rceil = n \iff n \in \mathbb{Z}$ and $n-1 < x \leq n$.
+
+Notation: $\lceil x \rceil =$ the ceiling of $x$.
+
+* Key Points
+** Integer Characterization
+- $\lfloor x \rfloor = x \iff x \in \mathbb{Z}$.
+- $\lceil x \rceil = x \iff x \in \mathbb{Z}$.
+
+* Examples
+** Example 1
+$\lfloor \frac{3}{2} \rfloor=1$
+Since $1 \in \mathbb{Z}$ and $1 \ge \frac{3}{2} < 1+1$ and $1 \le \frac{3}{2} < 1+1$.
+
+** Example 2
+$\lfloor -\frac{3}{2} \rfloor=-2$
+Since $2 \in \mathbb{Z}$ and $-2 \le -\frac{3}{2}<\frac{1}{2}$.
+
+** Example 3
+$\forall x \in \mathbb{R}, \lfloor 2x \rfloor = 2 \lfloor x \rfloor$.
+
+** Example 4
+$\forall x \in \mathbb{R}, \lfloor x^2 \rfloor = \lfloor x \rfloor ^2$.
+

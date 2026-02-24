@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       84ff1e9d-bdbe-47f9-8130-4ae80f5fbb28
+:END:
+#+title: CPSC329 - Explorations in Information Security and Privacy
+#+filetags: :course:
+* Course Info
+- Instructor: Dr. Rafee Al Ahsan
+- Term: Winter 2026
+
+* Lecture A
+
+* Assignments
