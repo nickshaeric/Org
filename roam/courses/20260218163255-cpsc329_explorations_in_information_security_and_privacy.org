@@ -6,7 +6,43 @@
 * Course Info
 - Instructor: Dr. Rafee Al Ahsan
 - Term: Winter 2026
+* Course Overview
+CPSC329 builds a foundational understanding of information security and privacy.
+The course covers five core areas: recognizing threats and evaluating defenses in distributed systems, access control mechanisms, network and software-based attacks, ethical and legal issues in cybersecurity, and cryptographic tools and their applications.
+The emphasis throughout is on thinking critically about real-world challenges in protecting digital systems.
+* How the Course Operates
+Lectures introduce key concepts to the whole class. Weekly tutorials reinforce lecture content through hands-on worksheets and demonstrations.
+Worksheets must be completed *individually*, *in-person*, and *during your registered tutorial session only*.
+The course concludes with a *Group Research Project and Presentation*.
+* Assessments
+** Grading Breakdown
+- Tutorial Worksheets: *25%*
+- Midterm Exam: *20%*
+- Final Exam: *30%* (minimum 40% required to pass the course)
+- Group Project & Presentation: *20%*
+- Attendance: *5%*
+** Midterm
+A 2-hour, closed-book, in-person exam on *Saturday, February 28, 2026*.
+If missed with valid documentation submitted within 24 hours, the midterm weight may be transferred to the final exam, bringing it to 50% of the course grade.
+** Final Exam
+A 3-hour, closed-book, in-person exam scheduled by the Registrar.
+A minimum score of 40% on the final exam is required to pass the course regardless of other grades.
+There are no make-ups or alternative arrangements under any circumstances.
+** Worksheets
+Completed individually, in-person, during your registered tutorial session only.
+AI tools and external resources are strictly prohibited during worksheets.
+Missing a worksheet without a valid documented reason results in a zero for both the worksheet and attendance that day.
+** Attendance
+Recorded for tutorials only. A minimum of *95%* attendance is required for full credit.
 
 * Lecture A
+- [[id:0be6b1f3-fb8c-4cde-b580-f7028e347518][Cybersecurity]]
+- [[id:2df80c85-7f5a-4829-bf7c-a5bc82be2a4c][Privacy]]
+- [[id:ccf64ce0-6296-46c7-92c4-3135ff15231b][Privacy vs Security]]
+- [[id:326ef9ea-d7ec-4034-967f-3465f91e8aa4][CIA Triad]]
+- [[id:a4c39818-dd36-4f8a-ae85-a0e8c294ac09][Distributed Systems]]
+- [[id:41aad614-a6f6-4be2-b524-f2bc6897c85a][Threat Actors]]
+- [[id:e0707681-afc9-45c5-b207-1871161d0d2d][Equifax Data Breach (2017)]]
+- [[id:040043af-54dd-4bf3-8531-d773308c9f3a][SolarWinds Supply Chain Attack (2020)]]
 
-* Assignments
+* Lecture B

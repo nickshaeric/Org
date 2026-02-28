@@ -7,11 +7,10 @@
 - [[id:72e77390-d250-4a6c-a2db-c2bae9319f4c][Quotient-Remainder Theorem]]
 
 * Examples
-** Example 1
+** \(20 \mod 3\)
 $20 \bmod 3 = 2$ because $20 = 6 \times 3 + 2 \quad \text{and} \quad 0 \le 2 < 3$.
 
-** Example 2
-Prove that for all integers $n$, $n^3 + n$ is divisible by 3.
+** Prove that for all integers $n$, $n^3 + n$ is divisible by 3.
 
 Proof: Suppose $n \in \mathbb{Z}$. By the quotient–remainder theorem, there are three possible cases.
 

@@ -64,7 +64,6 @@ Each value is written as a linear combination of \(2026\) and \(271\).
 \end{array}
 
 ** Step 3 — Result
-
 \[
 1 = -21(2026) + 157(271)
 \]

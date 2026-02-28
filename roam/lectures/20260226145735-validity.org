@@ -1,0 +1,56 @@
+:PROPERTIES:
+:ID:       d396a0fe-e712-41ce-86c2-7916e7f2ec7a
+:END:
+#+title: Validity
+#+filetags: :lecture:
+* Lecture Notes
+An argument is *valid* when the conclusion is a *consequence* of the premises - see [[id:492af8e6-8800-437a-8051-a38168733496][consequence & entailment]], that is, the truth of the premises guarantees the truth of the conclusion.
+
+Validity is characterized by the *absence of counterexamples*: there is no possible case in which all the premises are true and the conclusion is false.
+
+Importantly, validity is not about the actual truth or falsity of the sentences in the argument. It is a structural property - it concerns whether it is *possible* for the premises to be true and the conclusion false simultaneously, not whether they actually are.
+
+This means:
+- A valid argument can have false premises.
+- A valid argument can have a false conclusion.
+- Having true premises and a true conclusion is not sufficient for validity.
+
+* Key Concepts
+** Definition: Validity
+An argument is *valid* \(\iff \) there is no case in which all the premises are true and the conclusion is false.
+
+Equivalently: the conclusion is a consequence of the premises - the premises entail the conclusion.
+
+** Definition: Invalidity
+An argument is *invalid* \(\iff\) there exists a case in which all the premises are true and the conclusion is false.
+
+Such a case is called a *counterexample* to the argument.
+
+** Notes
+- Validity is a property of the *argument as a whole*, not of individual sentences.
+- The notion of validity used in this course is *formal validity* - see [[id:df29916b-e8f0-493d-ae1a-36ab68728694][formal validity]].
+- Validity alone does not guarantee a true conclusion - for that you need [[id:202c1e49-0083-4123-8d97-cf06ef7f0821][soundness]]
+- To *prove* an argument valid you must show no counterexample is possible.
+- To *prove* an argument invalid you need only exhibit one counterexample.
+
+* Examples
+** Example 1 (Valid, false premises)
+1. Oranges are either fruit or musical instruments.
+2. Oranges are not fruit.
+\(\therefore\) Oranges are musical instruments.
+Premise 2 is false, yet there is no case where both premises are true and the conclusion false.
+The argument is *valid* - validity does not require true premises.
+
+** Example 2 (Invalid — true premises, true conclusion, still invalid)
+1. London is in England.
+2. Beijing is in China.
+\(\therefore\) Paris is in France.
+Counterexample: Paris declares independence. Premises remain true, conclusion becomes false.
+*Invalid* - true premises and a true conclusion are not sufficient for validity.
+
+** Example 3 (Invalid — counterexample exhibited)
+1. If the driver did it, the maid didn't do it.
+2. The maid didn't do it.
+\(\therefore\) The driver did it.
+Counterexample: the gardener did it. Both premises true, conclusion false.
+*Invalid.*

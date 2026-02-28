@@ -37,8 +37,7 @@
   - To disprove a divisibility statement: find a counterexample.
 
 * Examples
-** Example 1
-$\forall a,b,c \in \mathbb{Z}$, if $a \mid b$ and $b \mid c$, then $a \mid bc$.
+** $\forall a,b,c \in \mathbb{Z}$, if $a \mid b$ and $b \mid c$, then $a \mid bc$.
 Answer: True
 
 Proof: Suppose $a,b,c \in \mathbb{Z}$.
@@ -47,8 +46,7 @@ Suppose $b \mid c$, that is $b \neq 0$ and $\exists y \in \mathbb{Z}$ such that 
 $c = by = axy$, let $k = xy$, $k \in \mathbb{Z}$ therefore $c = ak$. Since $a$
 is a factor of $c$, $a \mid c$.
 
-** Example 2
-$\forall a,b,c \in \mathbb{Z}$, if $a \mid bc$, then $a \mid b$ or $a \mid c$.
+** $\forall a,b,c \in \mathbb{Z}$, if $a \mid bc$, then $a \mid b$ or $a \mid c$.
 Answer: False
 Negation: $\exists a,b,c \in \mathbb{Z}$ such that $a \mid bc$, but $a \nmid b$ and $a \nmid c$.
 
@@ -57,8 +55,7 @@ $a \mid bc = 6 \mid (2)(3) = 6 \mid 6 \implies \exists x \in \mathbb{Z}$ such th
 let $x=1$, where $1 \in \mathbb{Z}$, therefore $6=6(1)$.
 But, $6 \nmid 2$, since there does not exists an integer $y$ such that $2=6y$ and $6 \nmid 3$ since there does not exists an integer $z$ such that $3=6z$, therefore the original statement is false by negation.
 
-** Example 3
-$\forall a, b, c \in \mathbb{Z}$, if $a \mid b$ and $a \mid c$, then $a \mid b + c$ and $a \mid b - c$.
+** $\forall a, b, c \in \mathbb{Z}$, if $a \mid b$ and $a \mid c$, then $a \mid b + c$ and $a \mid b - c$.
 Answer: True
 
 Proof: Suppose $a,b,c \in \mathbb{Z}$. Suppose $a \mid b$ and $a \mid c$, that is $a \ne 0$ and $\exists x,y \in \mathbb{Z}$ such that $b=ax$ and $c=ay$.

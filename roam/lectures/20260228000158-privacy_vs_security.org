@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID:       ccf64ce0-6296-46c7-92c4-3135ff15231b
+:END:
+#+title: Privacy vs Security
+#+filetags: :lecture:
+* Lecture Notes
+[[id:0be6b1f3-fb8c-4cde-b580-f7028e347518][Cybersecurity]] & [[id:2df80c85-7f5a-4829-bf7c-a5bc82be2a4c][Privacy]] are closely related but address fundamentally different concerns, and conflating them is a common source of confusion.
+Security is primarily a technical and operational discipline - it asks "how do we defend systems and data from unauthorized access or attack?"
+Privacy is primarily a rights-based and ethical discipline - it asks "who should be permitted to access this data, under what conditions, and with whose consent?"
+The key insight is that security is a *tool* that can serve privacy, but security alone does not guarantee privacy.
+A well-secured system can still violate privacy if the data it protects is being collected or used in ways the individual has not consented to.
+Conversely, privacy policies and frameworks depend on security controls to actually be enforceable - without encryption and access control, privacy guarantees are meaningless in practice.
+The two concepts are therefore best understood as *complementary and mutually dependent*, each operating in a different register.
+
+* Key Concepts
+** Focus
+*Privacy* is concerned with protecting personal rights - autonomy, dignity, and individual control over personal data.
+*Security* is concerned with defending systems, data, and networks from unauthorized access, attacks, and damage.
+** What Drives Each
+Privacy is rooted in laws, ethics, and human rights frameworks - such as GDPR, HIPAA, and PIPEDA - and is fundamentally about fairness and individual choice in how data is handled.
+Security is driven by technical standards, risk management, and operational protocols designed to reduce vulnerabilities and exposure to threats.
+** Who Manages Each
+Privacy is overseen by individuals, organizations, and legal or regulatory bodies - including data protection officers, compliance officers, and policymakers.
+Security is handled by IT professionals such as security engineers, system administrators, and cybersecurity teams who implement controls and monitor for threats.
+** Goal
+The goal of privacy is to ensure informed consent, transparency, and trust in how personal data is collected, shared, and used.
+The goal of security is to prevent breaches, unauthorized access, data leaks, and other malicious actions that compromise systems and information.
+
+* Examples
+** The Email Analogy
+This distinction is illustrated cleanly through the example of email.
+Security can encrypt your emails to prevent anyone from reading them during transmission - this protects the *channel*.
+Privacy ensures that only the people you have authorized can read those emails, and that no unnecessary data - such as metadata or contact lists - is shared without your consent - this protects your *rights*.
+A system can provide the former without the latter.

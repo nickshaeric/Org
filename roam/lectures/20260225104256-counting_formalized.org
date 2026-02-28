@@ -1,0 +1,56 @@
+:PROPERTIES:
+:ID:       5b8c8ee0-4909-4a12-8cc3-25f4737c108b
+:END:
+#+title: Counting Formalized
+#+filetags: :lecture:
+* Lecture Notes
+_Counting_: Recipe, makes sense, works, good
+
+Popular steps in a recipe:
+- Arrange \(k\) of \(n\) objects
+- Choose \(k\) of \(n\) objects
+
+In how many ways can we arrange \(k\) of \(n\) objects?
+
+Answer: \(n (n-1) \ldots (n-k+1) \rightarrow k \text{ times}\)
+
+In how many ways can we choose \(k\) of \(n\) objects?
+
+Let \(\binom{n}{k}\) be the number of ways to choose \(k\) of \(n\) objects
+
+\(\binom{n}{k} \rightarrow\) reads "\(n\) choose \(k\)"
+
+** For Instance
+\(\binom{10}{1}=10\)
+
+\(\binom{10}{0}=1\)
+
+\(\binom{10}{9}=10\)
+
+\(\binom{10}{10}=1\)
+
+* Key Concepts
+We find a formula for \(\binom{n}{k}\) by counting how many ways we can arrange \(k\) of \(n\) objects.
+
+Answer: \(n(n-1)\dots(n-k+1)\)
+
+Now, we count differently
+
+** Recipe
+- Step 1: Choose \(k\) of \(n\) objects \(\rightarrow\) This can be done in \(\binom{n}{k}\) ways
+- Step 2: Arrange the \(k\) objects \(\rightarrow\) This can be done in \(k!\) ways
+
+  Answer: \(\binom{n}{k} k! \implies \binom{n}{k} = \frac{n(n-1) \ldots (n-k+1)}{k!}\)
+
+* Examples
+** Example 1
+\(\binom{10}{3} = \frac{10 \times 8 \times 7}{3 \times 2 \times 1} = 120\)
+
+** Example 2
+How many positive 4-digit integers can be formed using the digits \(1-9\) so that is has at least one \(1\)?
+
+*** Example of popular wrong recipe
+- Step 1: Choose a place to put \(1\) in. \(\rightarrow\) Can be done \(4\) ways
+- Step 2: Fill in the rest \(\rightarrow\) Can be done in \(9^3\) ways
+
+  The following recipe is incorrrect since it creates

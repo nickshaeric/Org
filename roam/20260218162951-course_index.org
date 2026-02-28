@@ -11,3 +11,4 @@
 - [[id:f497387c-eafe-4900-93c5-bfd4779e6afc][Pre-Calculus]]
 - [[id:06a6df46-6660-45ef-851c-6d8a85347e1b][Differential Calculus]]
 - [[id:8f9ae584-17bc-4efd-80bc-caf3351a40f3][Linear Algebra]]
+- [[id:45cbdedb-7353-40a7-9ec7-59e117b0979b][Automata Theory]]

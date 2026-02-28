@@ -22,17 +22,12 @@ Notation: $\lceil x \rceil =$ the ceiling of $x$.
 - $\lceil x \rceil = x \iff x \in \mathbb{Z}$.
 
 * Examples
-** Example 1
-$\lfloor \frac{3}{2} \rfloor=1$
+** $\lfloor \frac{3}{2} \rfloor=1$
 Since $1 \in \mathbb{Z}$ and $1 \ge \frac{3}{2} < 1+1$ and $1 \le \frac{3}{2} < 1+1$.
 
-** Example 2
-$\lfloor -\frac{3}{2} \rfloor=-2$
+** $\lfloor -\frac{3}{2} \rfloor=-2$
 Since $2 \in \mathbb{Z}$ and $-2 \le -\frac{3}{2}<\frac{1}{2}$.
 
-** Example 3
-$\forall x \in \mathbb{R}, \lfloor 2x \rfloor = 2 \lfloor x \rfloor$.
+** $\forall x \in \mathbb{R}, \lfloor 2x \rfloor = 2 \lfloor x \rfloor$.
 
-** Example 4
-$\forall x \in \mathbb{R}, \lfloor x^2 \rfloor = \lfloor x \rfloor ^2$.
-
+** $\forall x \in \mathbb{R}, \lfloor x^2 \rfloor = \lfloor x \rfloor ^2$.

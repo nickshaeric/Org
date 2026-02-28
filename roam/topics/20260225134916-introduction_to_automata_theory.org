@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       4032cc19-412c-427e-a73b-dcb050d73fdc
+:END:
+#+title: Introduction to Automata Theory
+#+filetags: :topic:
+* Definition
+
+* Key Points
+
+* Examples
+
+* Related Concepts

@@ -1,0 +1,52 @@
+:PROPERTIES:
+:ID:       492af8e6-8800-437a-8051-a38168733496
+:END:
+#+title: Consequence & Entailment
+#+filetags: :lecture:
+* Lecture Notes
+One of the primary things logic is concerned with is the notion of *consequence* - logic can be thought of as the science of what follows from what.
+
+When we evaluate a [[id:2f12940d-aff3-4d7c-ba90-b4afc3995ac2][logical argument]], the central question is always:
+*Does the conclusion follow from the premises?*
+
+This relationship between premises and conclusion can be expressed in two equivalent ways:
+- The conclusion is a *consequence* of the premises - viewed from the conclusion's perspective.
+- The premises *entail* the conclusion - viewed from the premises' perspective.
+
+These are two descriptions of the same underlying logical relationship.
+Entailment always runs in the direction of logical support: from premises toward conclusion.
+
+To say the premises entail the conclusion is to say that the truth of the premises *guarantees* the truth of the conclusion - there is no possible case in which the premises are all true and the conclusion is not.
+
+* Key Concepts
+** Definition: Consequence
+A sentence \(A\) is a *consequence* of sentences \(B_1, \ldots, B_n \iff\) There is no *case* in which \(B_1, \ldots, B_n\) are all true and \(A\) is not true.
+
+We also say: \(A\) *follows from* \(B_1, \ldots, B_n\), or that \(B_1, \ldots, B_n\) *entail* \(A\).
+
+** Definition: Case
+A *case* is an assignment of a truth value - *true* or *false* - to every sentence under consideration.
+Cases operate under the assumption of *bivalence*: every sentence is either true or false, never both and never neither.
+This assumption is foundational to classical logic and underlies the entire formal apparatus of this course.
+
+** Notes
+- Consequence and entailment are not two different relations - they are two perspectives on the same relation.
+- The definition of consequence is stated in terms of cases: it is the *absence of a counterexample* across all possible cases.
+- A *counterexample* to an argument is a case in which all premises are true and the conclusion is false — its existence proves the argument is invalid.
+- The definition above is still partially informal since it does not yet specify exactly which cases are possible. This will be made fully precise when the formal language is introduced - see [[id:df29916b-e8f0-493d-ae1a-36ab68728694][formal validity]].
+- Do not say that premises *infer* the conclusion. Inference is something a reasoning agent does. Entailment is a relation between sentences.
+
+* Examples
+** Example 1 (Consequence holds)
+Premises: "Priya is either an ophthalmologist or a dentist."
+"Priya is not a dentist."
+Conclusion: "Priya is an ophthalmologist."
+There is no case in which both premises are true and the conclusion false.
+The conclusion is a *consequence* of the premises; the premises *entail* the conclusion.
+
+** Example 2 (Consequence fails)
+Premises: "If the driver did it, the maid didn't do it."
+"The maid didn't do it."
+Conclusion: "The driver did it."
+Counterexample: the gardener did it. Both premises remain true, conclusion is false.
+The conclusion is *not* a consequence of the premises - the argument is invalid.

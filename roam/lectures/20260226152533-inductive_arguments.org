@@ -1,0 +1,39 @@
+:PROPERTIES:
+:ID:       49e774a6-83e2-4870-ac1b-620832c0ecab
+:END:
+#+title: Inductive Arguments
+#+filetags: :lecture:
+* Lecture Notes
+Not all good arguments are deductively [[id:d396a0fe-e712-41ce-86c2-7916e7f2ec7a][valid]].
+*Inductive arguments* generalize from observations about past or particular cases to a conclusion about a future or general case - but the conclusion goes *beyond* what the premises strictly guarantee.
+
+This means that even a good inductive argument is not deductively valid: it is always possible to construct a counterexample, since the premises do not *entail* the conclusion - they merely make it more probable or plausible.
+
+This course is specifically concerned with *deductive* [[id:d396a0fe-e712-41ce-86c2-7916e7f2ec7a][validity]] and [[id:492af8e6-8800-437a-8051-a38168733496][consequence & entailment]].
+Inductive arguments fall outside the scope of formal logic as studied here.
+
+* Key Concepts
+** Definition: Inductive Argument
+An *inductive argument* is an argument in which the premises support the conclusion by generalizing from observed or past cases, without the premises *entailing* the conclusion.
+
+A good inductive argument makes the conclusion *probable* given the premises - but it is never deductively valid.
+
+** Connection to Proof by Induction
+Inductive arguments bear a conceptual resemblance to *proof by induction* in mathematics.
+In both cases, observations or base cases are used to support a general conclusion.
+However, mathematical induction is actually a *deductively valid* proof technique - it establishes its conclusion with certainty given the base case and inductive step.
+Natural language inductive arguments do not have this guarantee.
+The shared name reflects the shared intuition of "generalizing from cases" but the logical status of the two is quite different.
+
+** Notes
+- Do not say the premises of an inductive argument *infer* the conclusion - entailment is a relation between sentences, inference is something an agent does.
+- Inductive arguments can be *good* arguments even though they are not deductively valid.
+  Validity is not the only standard by which arguments can be evaluated.
+
+* Examples
+** Example 1 (Good but Invalid Inductive Argument)
+1. Every winter so far, it has snowed in Calgary.
+\(\therefore\) It will snow in Calgary this coming winter.
+Counterexample: this coming winter it does not snow in Calgary.
+The premise can be true and the conclusion false - *not deductively valid*.
+Yet this is a reasonable argument in everyday reasoning - it is a good *inductive* argument.

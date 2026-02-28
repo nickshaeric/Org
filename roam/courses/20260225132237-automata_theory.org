@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       45cbdedb-7353-40a7-9ec7-59e117b0979b
+:END:
+#+title: Automata Theory
+#+filetags: :course:
+* Course Info
+- Instructor: Self-Taught
+- Term: Self-Study
+
+* Chpater 1
+- [[id:4032cc19-412c-427e-a73b-dcb050d73fdc][Introduction to Automata Theory]]

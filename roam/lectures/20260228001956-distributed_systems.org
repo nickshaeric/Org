@@ -1,0 +1,39 @@
+:PROPERTIES:
+:ID:       a4c39818-dd36-4f8a-ae85-a0e8c294ac09
+:END:
+#+title: Distributed Systems
+#+filetags: :lecture:
+* Lecture Notes
+A distributed system is a network of independent computers that work together to appear as a single coherent system to the user.
+These systems share resources, process data, and communicate over a network - and because they do so across many machines over potentially insecure channels, they present a dramatically larger attack surface than a single centralized system.
+Understanding distributed systems is central to [[id:0be6b1f3-fb8c-4cde-b580-f7028e347518][cybersecurity]] because the majority of modern infrastructure - cloud platforms, SaaS applications, IoT networks, and blockchain systems - is distributed by nature.
+This expanded attack surface means that all three pillars of the [[id:326ef9ea-d7ec-4034-967f-3465f91e8aa4][CIA Triad]] are under pressure simultaneously: the lack of a central control point complicates confidentiality, the need to communicate across nodes creates opportunities for integrity violations, and the interdependence of components makes availability harder to guarantee.
+Security threats in distributed systems fall into two related categories: *threats*, which describe the actions attackers take, and *vulnerabilities*, which describe the weaknesses those actions exploit.
+The relationship between the two is important - a threat without a vulnerability to exploit cannot succeed, and a vulnerability without a threat actor to exploit it causes no harm.
+Real-world breaches like the [[id:e0707681-afc9-45c5-b207-1871161d0d2d][Equifax Data Breach (2017)]] and ... illustrate concretely how threats and vulnerabilities combine to produce catastrophic outcomes in distributed environments.
+
+* Key Concepts
+** Definition and Characteristics
+A *distributed system* is a network of independent computers that collectively appear as a single coherent system to end users.
+Key characteristics that distinguish distributed systems from centralized ones are: no single central point of control, components operating concurrently across multiple machines, and the requirement to coordinate and communicate over potentially insecure channels.
+** Common Security Threats
+*Unauthorized Access* occurs when attackers gain access to sensitive resources or system components without proper credentials - typically caused by weak authentication, exposed APIs, or default passwords - and threatens all three pillars of the [[id:326ef9ea-d7ec-4034-967f-3465f91e8aa4][CIA Triad]].
+*Eavesdropping* involves intercepting unencrypted data being transmitted across the network - a direct violation of *Confidentiality* - most commonly caused by the use of unencrypted protocols such as plain HTTP rather than HTTPS.
+*Tampering* involves modifying data during transmission between distributed nodes - a direct violation of *Integrity* - caused by insecure communication protocols or poor data validation.
+*Man-in-the-Middle (MITM) Attacks* occur when an attacker secretly intercepts and potentially alters communication between two legitimate parties, simultaneously violating both *Confidentiality* and *Integrity*. Common causes include insecure protocols, DNS spoofing, and certificate forgery.
+** Vulnerabilities
+A *vulnerability* is a weakness, flaw, or misconfiguration in a system that can be exploited by a [[id:][Threat Actor]] to gain unauthorized access, disrupt services, or compromise data.
+*Unpatched Software* - failing to apply available security patches - allows attackers to exploit publicly known vulnerabilities. The WannaCry ransomware attack (2017) exploited an unpatched Windows vulnerability called EternalBlue.
+*Default Credentials* - using factory-set usernames and passwords such as admin/admin - effectively leave systems as open doors. The Mirai botnet compromised thousands of IoT devices precisely this way.
+*Exposed APIs* - publicly accessible interfaces that lack proper authentication or access control - allow attackers to extract data, manipulate system functions, or automate attacks at scale. T-Mobile's 2021 data breach stemmed from an insecure exposed API.
+*Misconfigured Cloud Services* - storage or databases inadvertently made public due to poor understanding of access policies - can expose confidential data to anyone with the link, violating [[id:2df80c85-7f5a-4829-bf7c-a5bc82be2a4c][privacy]] at scale. Numerous organizations have leaked sensitive PII through misconfigured AWS S3 buckets.
+
+* Examples
+** Target Data Breach (2013)
+Attackers breached Target's network not by attacking Target directly, but through a third-party HVAC vendor whose credentials were stolen - a supply chain vulnerability.
+Once inside, attackers moved *laterally* through the network to reach Target's payment systems, ultimately stealing credit card data from over 40 million customers.
+The key lesson is that distributed systems are only as secure as their weakest link - indirect vulnerabilities through vendors and partners can be just as devastating as direct attacks.
+** Threat and Vulnerability Interaction
+Eavesdropping as a threat only succeeds because unencrypted protocols exist as a vulnerability.
+MITM attacks only succeed because insecure certificate validation and DNS configurations create exploitable weaknesses.
+This is why defense in distributed systems must be *layered* - covering endpoints, APIs, network channels, and cloud configurations simultaneously.

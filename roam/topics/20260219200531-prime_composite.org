@@ -19,8 +19,7 @@ An integer $n$ is composite $\iff n>1$ and $n$ is not prime.
 - If $p$ is prime and $p \mid ab$, then $p \mid a$ or $p \mid b$.
 
 * Examples
-** Example 1
-$\forall x \in \mathbb{Z}, n^2+n+41$ is prime.
+** $\forall x \in \mathbb{Z}, n^2+n+41$ is prime.
 Answer: False
 
 Proof: Let $n=40$, where $40 \in \mathbb{Z}$.

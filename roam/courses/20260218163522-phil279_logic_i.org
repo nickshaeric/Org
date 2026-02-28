@@ -4,9 +4,27 @@
 #+title: PHIL279 - Logic I
 #+filetags: :course:
 * Course Info
-- Instructor:
+- Instructor: Gillman Payette
 - Term: Winter 2026
 
-* Lecture 1
+* Course Overview
+PHIL279 is an introductory course in formal logic.
+The course introduces the semantics and proof-theory of *Truth-Functional Logic (TFL)* and *First-Order Logic (FOL)*.
 
-* Assignments
+The three core skills developed throughout the course are:
+1. *Symbolization*: translating natural language sentences into a formal language.
+2. *Counterexamples*: using truth tables and interpretations to demonstrate invalidity or non-equivalence.
+3. *Formal Proofs*: constructing derivations in a natural deduction system.
+
+Arguments are analysed at two levels of granularity:
+- *Propositional (TFL)*: treats whole sentences as atomic units, connected by logical connectives.
+- *First-Order Logic (FOL)*: breaks sentences down into objects, properties, and quantifiers.
+
+* Lecture 1 - Introduction
+- [[id:0e5aee54-8155-4f8c-b151-d3acfef79a2a][Logical Statements]]
+- [[id:2f12940d-aff3-4d7c-ba90-b4afc3995ac2][Logical Arguments]]
+- [[id:492af8e6-8800-437a-8051-a38168733496][Consequence & Entailment]]
+- [[id:df29916b-e8f0-493d-ae1a-36ab68728694][Formal Validity]]
+- [[id:d396a0fe-e712-41ce-86c2-7916e7f2ec7a][Validity]]
+- [[id:202c1e49-0083-4123-8d97-cf06ef7f0821][Soundness]]
+- [[id:49e774a6-83e2-4870-ac1b-620832c0ecab][Inductive Arguments]]

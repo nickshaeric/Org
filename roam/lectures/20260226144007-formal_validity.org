@@ -1,0 +1,65 @@
+:PROPERTIES:
+:ID:       df29916b-e8f0-493d-ae1a-36ab68728694
+:END:
+#+title: Formal Validity
+#+filetags: :lecture:
+* Lecture Notes
+One distinguishing feature of logical [[id:492af8e6-8800-437a-8051-a38168733496][consequence & entailment]] is that it should not depend on the *content* of the premises and conclusion, but only on their *logical form*.
+
+Contrast the following three notions of validity, all sharing the same underlying case-based structure but differing in what counts as a possible case:
+
+- *Nomological validity*: no counterexample that respects the laws of nature.
+- *Conceptual validity*: no counterexample that respects conceptual connections between words.
+- *Formal validity*: no counterexample period - validity holds in virtue of logical form alone,
+  independent of content.
+
+As logicians, our strategy is to develop a notion of *case* on which an argument turns out to be valid if and only if it is formally valid.
+
+* Key Concepts
+** Definition: Formal Validity
+An argument is *formally valid* \(\iff\) its validity depends only on its *logical form* - the abstract pattern of the argument - and not on the specific content of its sentences.
+
+Equivalently: every argument sharing the same logical form is also valid.
+
+** Definition: Logical Form
+The *logical form* of an argument is the abstract pattern obtained by replacing all non-logical
+content with placeholder variables, retaining only the [[id:][logical connectives]].
+
+** Bivalence
+The formal treatment of cases rests on one foundational assumption:
+*Bivalence* - every sentence under consideration is either true or false, never both and never neither.
+If a case does not make a sentence true, it makes it false. There is no third option.
+
+** Notes
+- Formal validity is stricter than both nomological and conceptual validity.
+- The difference between conceptual and formal validity: "eye doctor" and "ophthalmologist" have the same content, but formal logic treats them as distinct symbols - it cannot see
+  conceptual connections between words.
+- Content is stripped away entirely in the formal language - sentences are replaced by atoms
+  and placeholders. See [[id:2f12940d-aff3-4d7c-ba90-b4afc3995ac2][Logical Arguments]] & _(Add Formal Language)_.
+- This is why the formal language is built the way it is: it provides a precise, content-free
+  notion of case that makes formal validity fully rigorous.
+
+* Examples
+** Example 1 (Formally Valid)
+Priya is either an ophthalmologist or a dentist.
+Priya is not a dentist.
+Therefore, Priya is an ophthalmologist.
+
+Logical form:
+\(A\) is either an \(X\) or a \(Y\).
+\(A\) is not a \(Y\).
+Therefore, \(A\) is an \(X\).
+
+Any substitution into this pattern produces a valid argument. *Formally valid.*
+
+** Example 2 (Conceptually but not Formally Valid)
+Priya is either an ophthalmologist or a dentist.
+Priya is not a dentist.
+Therefore, Priya is an eye doctor.
+
+Logical form:
+\(A\) is either an \(X\) or a \(Y\).
+\(A\) is not a \(Y\).
+Therefore, \(A\) is a \(Z\).
+
+The conclusion only follows if we know \(X\) and \(Z\) mean the same thing - a *conceptual* connection that formal logic cannot see. *Not formally valid.*

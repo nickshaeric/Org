@@ -1,0 +1,52 @@
+:PROPERTIES:
+:ID:       202c1e49-0083-4123-8d97-cf06ef7f0821
+:END:
+#+title: Soundness
+#+filetags: :lecture:
+* Lecture Notes
+*Soundness* is a stronger property than [[id:d396a0fe-e712-41ce-86c2-7916e7f2ec7a][validity]].
+A valid argument guarantees that *if* the premises are true, the conclusion must be true.
+But validity alone does not tell us whether the premises actually are true.
+
+Soundness closes this gap - a sound argument is one where the structure is valid *and* the premises are actually true. This combination guarantees that the conclusion is true.
+
+Importantly, the logician is primarily concerned with validity rather than soundness.
+Determining whether premises are actually true falls outside formal logic - that is the job of science, history, observation, and so on. Logic concerns itself with the *conditions* under which statements are true, not with *which* statements are true.
+
+* Key Concepts
+** Definition: Soundness
+An argument is *sound* \(\iff :\)
+1. It is [[id:d396a0fe-e712-41ce-86c2-7916e7f2ec7a][valid]], *and*
+2. All of its premises are *true*.
+
+** Rebutting an Argument
+To rebut an argument you have exactly two options:
+- Show that *one or more premises are false* - attacking soundness.
+- Show that *the argument is not valid* - attacking the structure.
+
+** Notes
+- Soundness implies validity, but validity does not imply soundness.
+- A sound argument *guarantees* a true conclusion.
+- A valid argument with false premises is *not* sound — see Example 1.
+- Formal logic focuses on validity rather than soundness since establishing
+  the actual truth of premises is an empirical matter, not a logical one.
+
+* Examples
+** Example 1 (Valid but Unsound)
+1. Oranges are either fruit or musical instruments.
+2. Oranges are not fruit.
+\(\therefore\) Oranges are musical instruments.
+The argument is *valid* but *unsound* - premise 2 is false.
+
+** Example 2 (Valid but Unsound)
+1. Abe Lincoln was either from France or from Luxembourg.
+2. Abe Lincoln was not from Luxembourg.
+\(\therefore\) Abe Lincoln was from France.
+*Valid* structure, but premise 1 is false - Lincoln was from the United States. *Unsound.*
+
+** Example 3 (Sound)
+1. All humans are mortal.
+2. Socrates is a human.
+\(\therefore\) Socrates is mortal.
+The argument is *valid* and both premises are *true*. *Sound.*
+The conclusion is therefore guaranteed to be true.

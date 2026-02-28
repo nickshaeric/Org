@@ -24,3 +24,12 @@
 
 * Week 4
 ** Lecture 1: [[id:24835a98-2bcc-499d-aadb-b489a7a3b899][Introduction to Induction]]
+** Lecture 2: Induction Continued
+** Lecture 3: Strong Induction
+
+* Week 5
+** Lecture 1: [[id:24f36df4-2735-4424-abde-69b0b77a6bb3][Introduction to Sets]]
+
+* Week 6
+** Lecture 1: [[id:266c3e37-6275-4037-9ef1-d74b4118b4c3][Introduction to Counting]]
+** Lecture 2: [[id:5b8c8ee0-4909-4a12-8cc3-25f4737c108b][Counting Formalized]]

@@ -1,0 +1,49 @@
+:PROPERTIES:
+:ID:       2f12940d-aff3-4d7c-ba90-b4afc3995ac2
+:END:
+#+title: Logical Arguments
+#+filetags: :lecture:
+* Lecture Notes
+An argument is a structured set of sentences composed of one or more *premises* and exactly one *conclusion*.
+The premises are intended to support the conclusion.
+Since arguments are built entirely from sentences, only [[id:0e5aee54-8155-4f8c-b151-d3acfef79a2a][statements]] - sentences that can be true or false - can serve as premises or conclusions. Questions and commands have no truth value and therefore cannot appear in a logical argument.
+
+When evaluating an argument, the central question is:
+*Does the conclusion follow from the premises?*
+This is a question about the *structure* of the argument, not about whether the premises are actually true.
+An argument can have a valid structure even if its premises are false - see [[id:d396a0fe-e712-41ce-86c2-7916e7f2ec7a][validity]] and [[id:202c1e49-0083-4123-8d97-cf06ef7f0821][soundness]].
+
+* Key Concepts
+** Definition
+An *argument* is a set of [[id:0e5aee54-8155-4f8c-b151-d3acfef79a2a][statements]] consisting of:
+- One or more *premises*: statements offered as support.
+- Exactly one *conclusion*: the statement the premises are intended to establish.
+** Indicator Words
+Natural language arguments use certain words to signal the logical role of a sentence.
+*Conclusion indicators* signal that what follows is the conclusion:
+- so, therefore, hence, thus, accordingly, consequently
+** Notes
+- Premises and conclusions do not need to appear in any fixed order - a conclusion can come before its premises in natural language.
+- The logical role of a sentence (premise vs. conclusion) is determined by its function in the argument, not its position.
+- Indicator words are a useful guide but are not always present - sometimes the structure must be inferred from context.
+- In formal logic, the distinction between premises and conclusion is made explicit by the turnstile notation: \(P_1, P_2 \vdash C\).
+
+* Examples
+** Example 1
+"It is sunny. So I should take my sunglasses."
+- Premise: "It is sunny."
+- Conclusion indicator: "So"
+- Conclusion: "I should take my sunglasses."
+** Example 2
+"It must have been sunny. I did wear my sunglasses after all."
+- Premise indicator: "after all"
+- Premise: "I did wear my sunglasses."
+- Conclusion: "It must have been sunny."
+(Note: the conclusion appears *first* here — order does not determine logical role.)
+** Example 3
+"Miss Scarlet and Professor Plum were in the study at the time of the murder.
+Reverend Green had the candlestick in the ballroom, and we know there is no blood on his hands.
+Hence Colonel Mustard did it in the kitchen with the lead pipe. Recall, after all, the gun had not been fired."
+- Premises: all sentences except the conclusion.
+- Conclusion indicator: "Hence"
+- Conclusion: "Colonel Mustard did it in the kitchen with the lead pipe."

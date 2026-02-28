@@ -1,0 +1,35 @@
+:PROPERTIES:
+:ID:       2df80c85-7f5a-4829-bf7c-a5bc82be2a4c
+:END:
+#+title: Privacy
+#+filetags: :lecture:
+* Lecture Notes
+Privacy is the fundamental right of individuals to control the collection, use, storage, and dissemination of their personal information.
+It is important to understand that privacy is not simply about secrecy - it is about *agency* and *informed consent*.
+This distinction matters because a system can be technically secure while still violating privacy.
+For example, a company may protect your data from external attackers while simultaneously sharing it with third parties without your knowledge - the data is secure, but your privacy has been violated.
+This is why [[id:ccf64ce0-6296-46c7-92c4-3135ff15231b][privacy vs security]]  are treated as related but distinct concepts.
+Privacy concerns arise across four distinct categories, each capturing a different dimension of personal space that individuals have a right to protect.
+
+* Key Concepts
+** Definition
+*Privacy* is the right of individuals to control what personal information is collected about them, who can access it, under what circumstances, and for what purpose.
+** Categories of Privacy
+*Informational Privacy* concerns the handling of personally identifiable information (PII) - such as names, email addresses, browsing habits, health records, and financial data.
+
+The risk is that if this data is not properly secured or governed, it can be leaked or sold to third parties without the individual's consent.
+*Bodily Privacy* protects individuals from physical or biological intrusions, particularly in medical or surveillance contexts - for example, mandatory biometric scanning or medical testing without consent.
+The risk here is loss of autonomy over one's own biological data, such as DNA profiles or fingerprints.
+
+*Territorial Privacy* protects personal physical and digital spaces - including homes, private offices, personal cloud storage, and virtual desktops.
+The risk is that unauthorized surveillance of these spaces, even passively, can cause real harm and erode the sense of personal safety.
+
+*Communication Privacy* ensures that conversations and correspondence remain confidential and free from unauthorized interception.
+Without encryption, emails, messages, and calls are vulnerable to interception by malicious actors or even governments.
+
+* Examples
+** Real-World Privacy Breaches
+The *Facebook–Cambridge Analytica scandal* is a case of informational privacy violation at scale - a third-party app harvested personal data from millions of users without explicit consent, which was then used to influence political behaviour.
+*Mobile app permissions* represent a subtler but pervasive form of privacy erosion - many apps request access to location, contacts, camera, and microphone far beyond what their core functionality requires, and users frequently grant these permissions without fully understanding the implications.
+*Smart devices* such as fitness trackers, smart TVs, and voice assistants continuously gather behavioural data. When this data is transmitted to external servers without proper encryption or consent, it constitutes a serious territorial and informational privacy concern.
+*Email scanning by service providers* - older versions of Gmail, for instance - used to scan message content to target advertising, undermining communication privacy even within a system users trusted for correspondence.

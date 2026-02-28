@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       266c3e37-6275-4037-9ef1-d74b4118b4c3
+:END:
+#+title: Introduction to Counting
+#+filetags: :lecture:
+* Lecture Notes
+Counting answers the question "How many?"
+
+To count "objects", we think of ways to make them, which is a _recipe_.
+
+A recipe has the form"
+- Insert Recipe Form
+
+* Key Concepts
+
+* Examples

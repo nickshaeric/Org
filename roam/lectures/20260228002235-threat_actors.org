@@ -1,0 +1,51 @@
+:PROPERTIES:
+:ID:       41aad614-a6f6-4be2-b524-f2bc6897c85a
+:END:
+#+title: Threat Actors
+#+filetags: :lecture:
+* Lecture Notes
+In [[id:0be6b1f3-fb8c-4cde-b580-f7028e347518][Cybersecurity]], understanding *who* the attackers are is just as important as understanding *how* they attack.
+Threat actors are individuals or groups who pose a risk to digital assets, each characterized by distinct motivations, capabilities, and targets.
+The type of threat actor determines not just the method of attack but also its likely target, sophistication, and persistence - and therefore shapes what defenses are most appropriate.
+
+It is also worth noting that the same vulnerability in a [[id:a4c39818-dd36-4f8a-ae85-a0e8c294ac09][distributed system]] can be exploited by very different actors for very different purposes - an unpatched API might be hit opportunistically by a script kiddie, systematically by a cybercriminal, or as part of a years-long campaign by a nation-state actor.
+
+A key insight from the lecture is that threat sophistication does not correlate cleanly with threat severity - even low-skill actors can cause catastrophic damage if security hygiene is poor, and many major breaches begin with something as simple as a phishing email.
+This matters for the [[id:326ef9ea-d7ec-4034-967f-3465f91e8aa4][CIA Triad]] because different actors tend to target different pillars: hacktivists often target *Availability* through DDoS attacks, cybercriminals frequently target *Confidentiality* through data theft, and nation-state actors may target all three simultaneously in sustained operations.
+
+* Key Concepts
+** Hacktivists
+*Hacktivists* are motivated by ideological or political causes - protest, activism, or the public exposure of corruption.
+Their typical tactics include DDoS attacks, website defacement, and leaking sensitive information.
+The group Anonymous is the canonical example, having targeted governments, corporations, and religious institutions in various protest campaigns.
+An important nuance: hacktivists often frame their actions as ethical or justified, but they still cause real harm to systems, data integrity, and innocent third parties - the motivation does not neutralize the damage.
+** Insiders
+*Insiders* are threat actors who already have legitimate access to internal systems - employees, contractors, vendors, or partners.
+Their motivation varies widely: it may be malicious intent, revenge, financial gain, or simple negligence.
+Malicious insiders may steal trade secrets or sabotage systems deliberately; negligent insiders may click phishing links or misconfigure access controls without any harmful intent.
+Insider threats are among the hardest to detect precisely because the actor is already trusted and bypasses traditional perimeter defenses entirely - the threat originates from within the secured boundary rather than outside it.
+This connects directly to the [[id:2df80c85-7f5a-4829-bf7c-a5bc82be2a4c][privacy]] concern of over-collection: the more data an organization collects and the more people have access to it, the larger the insider threat surface becomes.
+** Cybercriminals
+*Cybercriminals* are motivated primarily by financial gain and represent the most common category of attacker encountered in practice.
+They operate in organized crime rings, frequently selling stolen data and attack tools on dark web markets and hacker forums.
+Their tactics include ransomware, phishing, identity theft, online fraud, and credit card skimming - all of which map directly onto violations of [[id:326ef9ea-d7ec-4034-967f-3465f91e8aa4][CIA Triad]] pillars, particularly *Confidentiality* and *Availability*.
+A critical insight is that cybercriminals treat attacks as a *business* - complete with affiliate networks, profit-sharing schemes, and even customer support portals for ransomware victims. The Conti ransomware group is a prominent example, having extorted millions from organizations globally.
+** Nation-State Actors
+*Nation-state actors* are government-sponsored groups motivated by espionage, geopolitical advantage, critical infrastructure disruption, or economic sabotage.
+They are highly trained, well-funded, and capable of executing stealthy long-term operations known as *Advanced Persistent Threats (APTs)* - attacks that may remain undetected for months or years.
+Their targets tend to be government agencies, defense contractors, critical utilities, and strategic corporations.
+The Stuxnet worm - believed to be a joint U.S.-Israeli cyberweapon targeting Iran's nuclear centrifuge program - is the defining example of nation-state offensive cyber capability.
+The [[id:][SolarWinds Supply Chain Attack (2020)]], attributed to APT29 (Cozy Bear), a Russian intelligence group, illustrates how nation-state actors can compromise [[id:a4c39818-dd36-4f8a-ae85-a0e8c294ac09][distributed systems]] at a scale that affects thousands of downstream organizations simultaneously.
+** Script Kiddies
+*Script kiddies* are inexperienced individuals who use pre-built hacking tools and scripts without understanding how they work, motivated by reputation, curiosity, or thrill-seeking.
+Their typical tactics include port scanning, website defacement, and exploiting known unpatched vulnerabilities.
+Despite their lack of technical sophistication, script kiddies can still cause significant damage - particularly to systems with poor security hygiene - because the tools they use can be highly effective even in unskilled hands.
+This reinforces the core lesson: many major breaches begin not with sophisticated zero-day exploits but with low-tech attacks like phishing and social engineering, often executed by unskilled actors exploiting basic vulnerabilities.
+
+* Examples
+** Threat Actor and Attack Type Mapping
+Hacktivists tend to target *Availability* - DDoS attacks against websites and services are their most visible weapon.
+Cybercriminals tend to target *Confidentiality* - stealing and monetizing data is their primary goal - as illustrated by the [[id:e0707681-afc9-45c5-b207-1871161d0d2d][Equifax Data Breach (2017)]].
+Nation-state actors tend to target all three pillars simultaneously in sustained campaigns - as illustrated by the [[id:][SolarWinds Supply Chain Attack (2020)]].
+Insiders can violate any pillar depending on their access level and intent, making them uniquely dangerous and uniquely difficult to defend against.
+Script kiddies most commonly target *Availability* and exploit *Confidentiality* weaknesses through opportunistic use of known tools against unpatched systems.

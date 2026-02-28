@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       e0707681-afc9-45c5-b207-1871161d0d2d
+:END:
+#+title: Equifax Data Breach (2017)
+#+filetags: :lecture:
+* Lecture Notes
+The Equifax breach is one of the most consequential cybersecurity incidents in history, and it is a case study in how organizational negligence - rather than sophisticated attack methodology - can produce catastrophic outcomes.
+The root cause was a known, patchable vulnerability in Apache Struts (CVE-2017-5638) that Equifax failed to remediate despite a patch being publicly available months before the attack.
+This makes it a near-perfect illustration of the *unpatched software* vulnerability discussed in [[id:a4c39818-dd36-4f8a-ae85-a0e8c294ac09][distributed systems]] - the threat was not novel or sophisticated, it simply found a door that should have been closed.
+The breach also demonstrates how all three pillars of the [[id:326ef9ea-d7ec-4034-967f-3465f91e8aa4][CIA Triad]] can be violated simultaneously: *Confidentiality* was shattered through mass data exfiltration, *Integrity* was undermined by the undetected presence of attackers moving laterally through the system, and *Availability* was threatened during the incident response period.
+From a [[id:2df80c85-7f5a-4829-bf7c-a5bc82be2a4c][privacy]] perspective, the breach is equally significant - the data compromised was among the most sensitive personally identifiable information imaginable, and once exfiltrated it cannot be recalled or protected retroactively.
+The [[id:41aad614-a6f6-4be2-b524-f2bc6897c85a][threat actors]] responsible were cybercriminals - motivated by financial gain and exploiting a well-known vulnerability opportunistically rather than through any advanced persistent technique.
+
+* Key Concepts
+** What Happened
+In mid-2017, attackers exploited a known vulnerability in Apache Struts - the open-source web framework powering Equifax's customer dispute portal - to gain initial access to the network.
+Once inside, they moved *laterally* through the system, a direct consequence of inadequate network segmentation, ultimately reaching and exfiltrating sensitive customer data over a period of months without detection.
+** What Went Wrong
+*Patch Management Failure* - the critical Apache Struts patch (CVE-2017-5638) was publicly available in March 2017 but was never applied to the affected systems, leaving a known door open for months.
+*Lack of Network Segmentation* - once inside the perimeter, attackers could move freely across the network to reach more sensitive systems. A properly segmented architecture would have contained the breach to a much smaller footprint.
+*Weak Data Protection* - sensitive data was not encrypted at rest in all parts of the system, and poor logging and monitoring meant the intrusion went undetected for an extended period, delaying response and compounding the damage.
+** Impact
+Personal data of 147 million Americans was compromised - including Social Security Numbers, full names, dates of birth, addresses, driver's license numbers, and in some cases credit card details.
+Equifax paid a $575 million settlement with the FTC, CFPB, and state authorities, and spent over $1.4 billion in total breach-related costs including legal fees, system upgrades, and identity protection services.
+The CEO, CIO, and CSO all resigned amid the backlash, and the company faced sustained congressional scrutiny over its cybersecurity practices.
+
+* Examples
+** Key Lessons
+The Equifax breach teaches three lessons that generalize well beyond this specific incident.
+First, *timely patch management is non-negotiable* - a known vulnerability with an available patch must be treated as urgent, and organizations must maintain asset inventories to know what software is running where.
+Second, *security is an organizational responsibility, not just a technical one* - the failure here was not purely technical but reflected poor communication, insufficient oversight, and a lack of accountability across the organization.
+Third, *data protection must be proactive* - encrypting sensitive data at rest, limiting access through least-privilege principles, and continuous monitoring are essential layers of defense that cannot be treated as optional.
+The central lesson is captured in a single principle from the lecture: "a patch not applied is a vulnerability waiting to be exploited."

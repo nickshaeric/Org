@@ -19,21 +19,20 @@ $\mathbb{N}=\{1,2,3,\ldots\}$
 - Definition: An integer $n$ is odd $\iff n=2k+1$ for some integer $k$.
 
 * Examples
-** Example 1
-For all integers $n$, if $n$ is even then $n^2$ is even.
+** For all integers $n$, if $n$ is even then $n^2$ is even.
 
 Answer: True
 Proof: Suppose $n \in \mathbb{Z}$. Suppose $n$ is even.
 Since $n$ is even, $n=2k$ for some integer $k$.
 Now, $n^2=(2k)^2=2(2k^2)$ where $2k^2$ is an integer, so $n$ is even.
-** Example 2
-For all integers $n$, there exists an integer $m$ such that $n+m$ is even.
+
+** For all integers $n$, there exists an integer $m$ such that $n+m$ is even.
 
 Answer: True
 Proof: Suppose $n \in \mathbb{Z}$. Choose $m = 6 - n$, then $m \in \mathbb{Z}$ and
 $m + n = (6 - n) + m = 6 = 2 \times 3$ where $3 \in \mathbb{Z}$, so $m + n$ is even.
-** Example 3
-There exists an integer $m$, such that for all integers $n$, $n + m$ is even.
+
+** There exists an integer $m$, such that for all integers $n$, $n + m$ is even.
 
 Answer: False
 Negation: For all integers $m$, there exists an integer $n$ such that

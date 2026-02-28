@@ -1,0 +1,38 @@
+:PROPERTIES:
+:ID:       0e5aee54-8155-4f8c-b151-d3acfef79a2a
+:END:
+#+title: Logical Statements
+#+filetags: :lecture:
+* Lecture Notes
+Logic is concerned with evaluating [[id:2f12940d-aff3-4d7c-ba90-b4afc3995ac2][logical arguments]].
+Since arguments are built from sentences, we need to be precise about which *kind* of sentences logic can work with.
+
+Not all sentences are created equal - only sentences that can be *true or false* are useful to logic.
+These are called *statements* (also called *propositions*).
+
+Statements are contrasted with:
+- *Questions*: "Is it raining?" - requests information, cannot be true or false.
+- *Commands*: "Close the door!" - issues an instruction, cannot be true or false.
+
+The reason logic restricts itself to statements is tied directly to the definition of [[id:d396a0fe-e712-41ce-86c2-7916e7f2ec7a][validity]].
+If a sentence cannot be true or false, it plays no role in determining whether an argument is [[id:d396a0fe-e712-41ce-86c2-7916e7f2ec7a][valid]].
+
+* Key Concepts
+** Definition
+A *statement* is a sentence that has a truth value - that is, it is either *true* or *false*.
+
+** Notes
+- Statements are the building blocks of [[id:2f12940d-aff3-4d7c-ba90-b4afc3995ac2][logical arguments]]: premises and conclusions must always be statements.
+- Questions and commands are not statements and cannot appear as premises or conclusions in a logical argument.
+- In formal logic, statements are modelled by *atoms* and complex *formulas* in the [[id:][formal language]].
+
+* Examples
+** Statements (have a truth value)
+- "It is sunny." \(\rightarrow\) True or false depending on the weather. *Statement.*
+- "No one but you had their hand in the cookie jar." \(\rightarrow\) Can be true or false. *Statement.*
+- "Green is a colour." \(\rightarrow\) Always true. Still a *statement* (a [[id:][necessary truth]]).
+
+** Non-Statements (no truth value)
+- "Is it raining?" \(\rightarrow\) A question. *Not a statement.*
+- "Close the door!" \(\rightarrow\) A command. *Not a statement.*
+- "Please pass the salt." \(\rightarrow\) A request. *Not a statement.*

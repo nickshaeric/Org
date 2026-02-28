@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       0be6b1f3-fb8c-4cde-b580-f7028e347518
+:END:
+#+title: Cybersecurity
+#+filetags: :lecture:
+* Lecture Notes
+Cybersecurity is the practice of protecting digital systems, networks, and data from unauthorized access, damage, or theft.
+It is a multidisciplinary field - meaning it does not concern itself only with technical solutions, but equally with human factors such as user behaviour, organizational policy, and training.
+The goals of cybersecurity are captured by the [[id:326ef9ea-d7ec-4034-967f-3465f91e8aa4][CIA Triad]]: confidentiality, integrity, and availability.
+These three principles underlie the design, assessment, and management of virtually every security framework and risk management strategy in use today.
+
+* Key Concepts
+** Definition
+*Cybersecurity* is the practice of protecting digital systems, networks, and data from unauthorized access, damage, or theft through a combination of technology and human-centered controls.
+** Domains of Cybersecurity
+Cybersecurity is not a single discipline but a collection of interconnected domains, each addressing a different surface of attack.
+*Network Security* protects internal networks from intrusion by securing both hardware and software infrastructure.
+*Application Security* ensures that software and devices remain free of threats through secure coding practices, regular updates, and rigorous testing.
+*Information Security* protects the integrity and privacy of data both in storage and in transit - closely related to the [[id:326ef9ea-d7ec-4034-967f-3465f91e8aa4][CIA Triad]].
+*Operational Security (OpSec)* governs the policies and procedures for handling data assets, including permissions, access levels, and authentication mechanisms.
+*Business Continuity and Disaster Recovery Planning* ensures that organizations can continue operations and recover quickly after a security incident or natural disaster.
+
+* Examples
+** Common Types of Cyberattacks
+*Malware* is a broad category of malicious software — including viruses, worms, spyware, and trojans - that disrupts, damages, or gains unauthorized access to systems.
+*Phishing* is a social engineering attack in which an attacker impersonates a legitimate entity to deceive users into revealing sensitive information such as passwords or financial details, typically via email or fake websites.
+*Ransomware* is a specific type of malware that encrypts a victim's data and demands payment for its restoration. It directly attacks the [[id:326ef9ea-d7ec-4034-967f-3465f91e8aa4][CIA Triad]] by violating both confidentiality and availability.
+*DoS/DDoS (Denial-of-Service / Distributed Denial-of-Service)* floods a system or network with excessive traffic to render it unavailable to legitimate users. A DDoS attack coordinates this flood across many compromised systems simultaneously.

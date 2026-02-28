@@ -1,0 +1,53 @@
+:PROPERTIES:
+:ID:       326ef9ea-d7ec-4034-967f-3465f91e8aa4
+:END:
+#+title: CIA Triad
+#+filetags: :lecture:
+* Lecture Notes
+The CIA Triad is the foundational model for understanding and implementing information security principles.
+It stands for *Confidentiality*, *Integrity*, and *Availability* - three pillars that guide the design, assessment, and management of secure systems.
+As introduced in [[id:0be6b1f3-fb8c-4cde-b580-f7028e347518][cybersecurity]], these three principles form the stated goal of the entire discipline - every major security framework and risk management strategy can be traced back to one or more of them.
+It is also worth situating the triad relative to [[id:ccf64ce0-6296-46c7-92c4-3135ff15231b][privacy vs security]]: the CIA Triad is fundamentally a *security* framework - it tells us how to defend systems and data.
+However, *Confidentiality* in particular operates as the bridge between security and [[id:2df80c85-7f5a-4829-bf7c-a5bc82be2a4c][privacy]] - enforcing confidentiality through encryption and access control is the primary technical mechanism through which privacy rights are made enforceable in practice.
+Without confidentiality controls, privacy policies and frameworks are simply unenforceable promises.
+It is worth noting that the three pillars are not independent - attacks often target multiple pillars simultaneously.
+For example, a ransomware attack violates both *Availability* (by locking users out of their data) and *Confidentiality* (by potentially exfiltrating that data before encrypting it).
+Similarly, a man-in-the-middle attack violates both *Confidentiality* (by intercepting data) and *Integrity* (by potentially altering it in transit).
+Understanding the triad therefore means not just knowing each pillar in isolation, but recognizing how violations interact across them.
+
+* Key Concepts
+** Confidentiality
+*Confidentiality* ensures that sensitive information is accessible only to those with proper authorization - the goal is to prevent data leakage or unauthorized disclosure.
+This pillar is the technical counterpart to [[id:2df80c85-7f5a-4829-bf7c-a5bc82be2a4c][privacy]] - where privacy is the right, confidentiality is the mechanism through which that right is enforced.
+The intuition is simple: like a locked filing cabinet, only people with the key should be able to access its contents.
+The primary techniques for enforcing confidentiality are:
+- *Encryption* converts data into an unreadable format that can only be decoded with the correct decryption key - common algorithms include AES and RSA.
+- *Access Control* restricts access to data based on user roles and permissions - for example, distinguishing between read-only and administrator access.
+- *Authentication* verifies a user's identity before granting access - mechanisms include passwords, biometrics, and two-factor authentication.
+** Integrity
+*Integrity* ensures that data is accurate, consistent, and unaltered except by authorized processes - it protects against tampering, whether accidental or malicious.
+The intuition: like a sealed document, if the seal is broken you know someone has altered it.
+The primary techniques for enforcing integrity are:
+- *Hashing* generates a unique digital fingerprint of data - for example using SHA-256 - such that any alteration to the data produces a different fingerprint, immediately revealing tampering.
+- *Checksums and CRCs* serve a similar purpose in file transfers, detecting corruption or unauthorized modification during transmission.
+- *Version Control* maintains a full history of changes to data or code - Git is the canonical example in software development.
+- *Audit Trails* log who changed what and when, providing accountability and supporting forensic analysis after an incident.
+** Availability
+*Availability* ensures that authorized users have reliable access to systems and data when they need it - a system that is perfectly secure but inaccessible is still a failure.
+The intuition: like a 24/7 ATM, users expect access to their resources at any time without delay.
+The primary techniques for enforcing availability are:
+- *Redundancy* runs multiple servers or systems in parallel so that no single point of failure can bring down the whole system - examples include RAID storage and load balancers.
+- *Failover Systems* automatically switch to backup infrastructure if a primary system fails.
+- *Regular Backups* protect against data loss from ransomware, hardware failure, or accidental deletion.
+- *DoS/DDoS Protection* uses firewalls and traffic filtering to absorb or deflect malicious traffic spikes before they overwhelm the system.
+
+* Examples
+** Confidentiality in Practice
+A healthcare application encrypts patient records such that only the treating physician - not even IT staff - can view them, enforcing confidentiality through encryption and role-based access control.
+This is also a privacy protection in practice - the encryption is the security mechanism, but the underlying motivation is protecting the patient's [[id:2df80c85-7f5a-4829-bf7c-a5bc82be2a4c][privacy]] rights over their medical data.
+** Integrity in Practice
+Banking systems attach hash values to transaction records during processing - if any value is altered in transit, the hash will no longer match, immediately flagging the tampering.
+** Availability in Practice
+Cloud services like Google Drive replicate data across multiple geographically distributed servers, ensuring users can always access their files even if one data centre goes offline.
+** Cross-Pillar Violation
+The Equifax breach (see [[id:e0707681-afc9-45c5-b207-1871161d0d2d][Equifax Data Breach (2017)]]) illustrates how a single incident can violate multiple pillars simultaneously - confidentiality was violated through data exfiltration, integrity was undermined by the undetected presence of attackers in the system, and availability was threatened during the incident response period.
