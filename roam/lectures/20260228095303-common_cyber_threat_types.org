@@ -1,0 +1,68 @@
+:PROPERTIES:
+:ID:       e92b2fbc-03d6-4cea-a544-b9eb0f693774
+:END:
+#+title: Common Cyber Threat Types
+#+filetags: :lecture:
+* Lecture Notes
+While [[id:4be1a51f-d94f-4c23-8b1a-2cbdbbec45fd][Security Threat Categories]]  organizes threats by origin and intent, this node focuses on the specific *types* of attacks that threat actors execute - the technical mechanisms through which harm is delivered.
+
+Each threat type exploits different weaknesses: some target software vulnerabilities, others target human behavior, and others exploit systemic issues like password reuse.
+
+A core principle from the lecture applies here: "Attackers only need one way in - defenders must block them all."
+Understanding threat types is foundational to selecting the right [[id:][Defense-in-Depth]] controls, as each threat type has corresponding defensive responses.
+All threat types ultimately map onto violations of one or more pillars of the [[id:326ef9ea-d7ec-4034-967f-3465f91e8aa4][CIA Triad]].
+
+* Key Concepts
+** Malware
+*Malware* (malicious software) is a broad category of software designed to disrupt, damage, or gain unauthorized access to computer systems.
+Key subtypes:
+- *Viruses*: Attach to legitimate files and replicate when run.
+- *Worms*: Self-replicating programs that spread across networks without user action - WannaCry operated as a worm.
+- *Trojans*: Disguised as legitimate software but perform hidden malicious tasks.
+- *Ransomware*: Encrypts data and demands payment for decryption - violates both *Confidentiality* and *Availability* in the [[id:326ef9ea-d7ec-4034-967f-3465f91e8aa4][CIA Triad]].
+- *Spyware*: Secretly collects keystrokes, browsing activity, or personal information — a direct violation of [[id:2df80c85-7f5a-4829-bf7c-a5bc82be2a4c][privacy]].
+Delivery methods include email attachments, infected USB drives, and drive-by downloads from compromised websites.
+Real-world example: [[id:][WannaCry Ransomware (2017)]] caused over $4 billion in global damage.
+
+** Phishing
+*Phishing* is a social engineering attack in which attackers impersonate legitimate entities to trick users into revealing credentials or financial information, typically via fake emails or websites.
+Key variants:
+- *Spear Phishing*: Targeted at specific individuals (e.g., HR officers, researchers).
+- *Whaling*: Targets high-level executives (CFOs, CEOs) with tailored attacks.
+- *Vishing*: Voice-based phishing via phone calls.
+- *Smishing*: SMS-based phishing via text messages.
+Phishing is the most common initial access vector for APTs and cybercriminals alike — the Sony Pictures hack (2014) began with a spear phishing email.
+Defense: Security awareness training, email filtering, and MFA.
+
+** Insider Threats
+See [[id:41aad614-a6f6-4be2-b524-f2bc6897c85a][Threat Actors]] for full treatment. Key point: Edward Snowden's leak of classified NSA documents is the canonical malicious insider example.
+Mitigations: Least privilege policies, employee monitoring, exit protocols, and audit trails.
+
+** DoS and DDoS
+*Denial of Service (DoS)* and *Distributed Denial of Service (DDoS)* attacks flood a server, service, or network with excessive traffic to render it unavailable - a direct attack on *Availability* in the [[id:326ef9ea-d7ec-4034-967f-3465f91e8aa4][CIA Triad]].
+DoS originates from a single machine; DDoS coordinates the attack across many compromised machines (a botnet).
+DDoS attacks are also used as a *smokescreen* - distracting IT teams while a concurrent data breach is executed, simultaneously attacking *Confidentiality*.
+The 2016 Mirai botnet - which exploited default credentials on IoT devices - took down major services including Netflix and Twitter.
+Defense: Rate limiting, web application firewalls (WAFs), and cloud-based DDoS protection.
+
+** Credential Stuffing
+*Credential stuffing* is the automated injection of username/password combinations obtained from past data breaches into other websites and services.
+It exploits the common human behavior of password reuse - a breach at one platform (e.g., LinkedIn) enables account takeovers on banks, emails, or social platforms.
+This attack type sits at the intersection of [[id:2df80c85-7f5a-4829-bf7c-a5bc82be2a4c][privacy]] and security: it is only possible because prior privacy breaches exposed credentials in the first place.
+Mitigation: MFA, monitoring for unusual login behavior, password reuse policies, and breach notification tools.
+
+** Zero-Day Exploits
+A *zero-day exploit* targets a vulnerability that is unknown to the software vendor or public, with no patch available at the time of exploitation.
+Because no defenses are prepared, detection is extremely difficult until damage is done.
+Zero-days are predominantly used by nation-state actors and APTs - as in the [[id:041aad614-a6f6-4be2-b524-f2bc6897c85a][Threat Actors]] node, Stuxnet exploited four simultaneous zero-days.
+Zero-days represent the upper limit of what [[id:][Patch Management]] cannot address proactively - they require behavior-based detection rather than signature-based detection.
+Defense: Behavioral anomaly detection, Endpoint Detection and Response (EDR), and threat hunting.
+
+* Examples
+** Threat Type to CIA Triad Mapping
+- Ransomware \(\rightarrow\) Confidentiality + Availability
+- Phishing \(\rightarrow\) Confidentiality (credential theft)
+- DDoS \(\rightarrow\) Availability (primary), Confidentiality (smokescreen)
+- Spyware \(\rightarrow\) Confidentiality + Privacy
+- Zero-Day \(\rightarrow\) All three pillars depending on payload
+- Credential Stuffing \(\rightarrow\) Confidentiality + Privacy

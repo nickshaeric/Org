@@ -5,7 +5,9 @@
 #+filetags: :lecture:
 * Lecture Notes
 Cybersecurity is the practice of protecting digital systems, networks, and data from unauthorized access, damage, or theft.
+
 It is a multidisciplinary field - meaning it does not concern itself only with technical solutions, but equally with human factors such as user behaviour, organizational policy, and training.
+
 The goals of cybersecurity are captured by the [[id:326ef9ea-d7ec-4034-967f-3465f91e8aa4][CIA Triad]]: confidentiality, integrity, and availability.
 These three principles underlie the design, assessment, and management of virtually every security framework and risk management strategy in use today.
 

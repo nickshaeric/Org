@@ -1,0 +1,46 @@
+:PROPERTIES:
+:ID:       a5174f5b-83cb-4310-ba1d-543669325e02
+:END:
+#+title: Patch Management
+#+filetags: :lecture:
+* Lecture Notes
+Patch management is the process of applying updates to software, operating systems, and firmware to fix security vulnerabilities, bugs, and performance issues.
+
+It is the single most direct defense against the *unpatched software* vulnerability class identified in [[id:a4c39818-dd36-4f8a-ae85-a0e8c294ac09][Distributed Systems]], and its failure is the shared root cause of both the [[id:e0707681-afc9-45c5-b207-1871161d0d2d][Equifax Data Breach (2017)]] and the [[id:00bead97-065c-4a3b-9b43-d98a4e5cb1c2][WannaCry Ransomware (2017)]] attack.
+The core principle is simple but frequently violated in practice: "A known vulnerability with no patch applied is an open door to attackers."
+
+Patch management is broader than simply applying updates - *vulnerability management* encompasses configuration hardening, disabling unused services, and network segmentation as compensating controls when patches cannot immediately be applied.
+Within the [[id:2f03d2a4-1d76-4da6-a7a1-492c3090953f][Defense-in-Depth]] framework, patching is a *preventive control* - it closes known vulnerabilities before threat actors can exploit them.
+
+* Key Concepts
+** The Patch Management Lifecycle
+A structured, repeatable lifecycle is essential for effective patching at scale:
+1. *Inventory* — Discover and document all assets (hardware, software, OS, applications) and identify which systems are in scope.
+2. *Prioritize* — Classify patches by severity and exploitability using scores such as CVSS. Focus first on critical systems and internet-facing services.
+3. *Test* — Apply patches in a controlled test environment first to check for compatibility, functionality regressions, and unintended disruptions.
+4. *Deploy* — Roll out patches using automated tools across production systems. Stagger rollouts for critical systems to maintain availability.
+5. *Verify* — Confirm patches were successfully applied and vulnerabilities are no longer exploitable. Generate compliance reports.
+
+** Challenges in Patch Management
+*Legacy Systems* — older systems that no longer receive vendor support cannot be patched in the traditional sense; they may require virtual patching, network isolation, or replacement.
+*Downtime and Business Impact* — patching often requires reboots or temporary outages, leading organizations to delay updates and inadvertently increasing their attack surface.
+*Lack of Automation* — manual patching is time-consuming, error-prone, and not scalable across large distributed environments.
+*Asset Visibility* — incomplete inventories mean unknown or forgotten devices remain unpatched and exposed — a direct failure of the Inventory phase.
+
+** Common Tools
+*** Tools
+**** WSUS
+Use Case: Microsoft patch distribution for Windows environments
+**** SCCM
+Use Case: Broad patch and asset management from Microsoft
+**** OpenVAS
+Use Case: Open-source vulnerability scanning engine
+**** Qualys/Nessus/Rapid7
+Use Case: Enterprise-grade vulnerability scanners and compliance tools
+
+* Examples
+** WannaCry and Equifax: The Cost of Not Patching
+The [[id:00bead97-065c-4a3b-9b43-d98a4e5cb1c2][WannaCry Ransomware (2017)]] exploited EternalBlue (CVE-2017-0144), for which Microsoft had released patch MS17-010 two months before the attack.
+The [[id:e0707681-afc9-45c5-b207-1871161d0d2d][Equifax Data Breach (2017)]] exploited Apache Struts (CVE-2017-5638), for which a patch had been available for months before the breach.
+Both cases share an identical failure in the Lifecycle: the Inventory and Deploy phases were not executed - systems were not tracked, and patches were not applied.
+Key takeaway: "Patching is not just IT hygiene - it's a critical part of your cybersecurity defense strategy."

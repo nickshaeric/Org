@@ -1,0 +1,62 @@
+:PROPERTIES:
+:ID:       4be1a51f-d94f-4c23-8b1a-2cbdbbec45fd
+:END:
+#+title: Security Threat Categories
+#+filetags: :lecture:
+* Lecture Notes
+Understanding how threats are categorized is foundational to designing effective defense strategies.
+Threats differ based on origin, intent, and impact, and [[id:0be6b1f3-fb8c-4cde-b580-f7028e347518][cybersecurity]] practitioners use these distinctions to determine which controls to prioritize.
+
+The four primary threat categories - External, Internal, Environmental, and Advanced Persistent Threats - map directly onto the actors, motivations, and tactics covered in [[id:41aad614-a6f6-4be2-b524-f2bc6897c85a][Threat Actors]], but approach the problem from an organizational rather than an actor-centric perspective.
+
+A critical insight is that these categories are not mutually exclusive - a nation-state APT may begin as an external threat, establish an insider foothold, and persist for months, blending all four categories simultaneously.
+All four categories ultimately threaten one or more pillars of the [[id:326ef9ea-d7ec-4034-967f-3465f91e8aa4][CIA Triad]], and understanding the category of a threat helps determine which defensive layer to prioritize.
+
+* Key Concepts
+** External Threats
+*External threats* originate outside the organization's security perimeter and are carried out by hackers, cybercriminal organizations, nation-state actors, hacktivist groups, or competitors.
+Motivations include financial gain, political disruption, intellectual property theft, and espionage.
+Because external threats are the most visible category, they tend to drive the most investment in perimeter defense systems such as firewalls, IDS/IPS, and VPNs.
+Key defense tactics: [[id:][Firewalls]], IDS/IPS, VPNs, and threat intelligence feeds.
+
+** Internal Threats
+*Internal threats* originate from within the organization - from current or former employees, contractors, third-party vendors, or interns who already have legitimate access to internal systems.
+Internal threats are either *intentional* (sabotage, espionage, data theft) or *unintentional* (human errors, accidental misconfiguration, falling for phishing emails).
+They are among the most dangerous threat categories precisely because insiders bypass perimeter defenses entirely - the threat originates from within the trusted boundary.
+Key defense tactics: Role-Based Access Control (RBAC), least privilege principle, employee monitoring, exit procedures, and security awareness training.
+Key Quote: "Internal threats are often more damaging because they already have access."
+This connects directly to [[id:41aad614-a6f6-4be2-b524-f2bc6897c85a][Threat Actors]] and the insider threat discussion there, and to [[id:2df80c85-7f5a-4829-bf7c-a5bc82be2a4c][privacy]] concerns around over-collection of data.
+
+** Environmental Threats
+*Environmental threats* are non-human threats arising from natural or infrastructural factors - earthquakes, floods, fires, power outages, and hardware failure.
+Their impact is primarily on *Availability* in the [[id:326ef9ea-d7ec-4034-967f-3465f91e8aa4][CIA Triad]], though they can also cause data corruption that violates Integrity.
+Key defense tactics: Disaster recovery plans, off-site backups, redundant power supplies (UPS), and geographically distributed data centers.
+
+** Advanced Persistent Threats (APTs)
+*APTs* are highly sophisticated, stealthy, and prolonged cyberattacks orchestrated by well-funded, trained groups - typically nation-state entities or state-sponsored cyber units such as APT29 (Cozy Bear) and APT10.
+Their lifecycle follows a consistent pattern: gain initial access (often via phishing or zero-day exploit), establish persistence using backdoors, escalate privileges and move laterally, then extract or sabotage data while remaining undetected for months.
+APTs threaten all three pillars of the [[id:326ef9ea-d7ec-4034-967f-3465f91e8aa4][CIA Triad]] simultaneously and in a sustained manner.
+Key defense tactics: Zero-trust architecture, behavior-based anomaly detection, threat hunting, MFA, and network segmentation.
+The [[id:040043af-54dd-4bf3-8531-d773308c9f3a][SolarWinds Supply Chain Attack (2020)]] is the canonical modern APT example, demonstrating how nation-state actors can compromise [[id:a4c39818-dd36-4f8a-ae85-a0e8c294ac09][distributed systems]] at a scale that affects thousands of downstream organizations.
+
+* Examples
+** Threat Category Comparison
+*** Extenal Threats
+Origin: Outside
+Intent: Malicious
+Common Defenses: Firewalls, IDS/IPS, VPN
+
+*** Internal Threats
+Origin: Inside
+Intent: Malicious/Accidental
+Common Defenses: RBAC, logging, training
+
+*** Environmental
+Origin: Non-human/Nature
+Intent: Unintentional
+Common Defenses: Backups, DRP, failover systems
+
+*** APTs
+Origin: Advanced Actors
+Intent: Strategic, Persistent
+Common Defenses: Threat intelligence, segmentation, EDR

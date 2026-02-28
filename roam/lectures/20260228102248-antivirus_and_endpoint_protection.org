@@ -1,0 +1,58 @@
+:PROPERTIES:
+:ID:       52711a00-a26b-440e-9867-3219b6072c25
+:END:
+#+title: Antivirus and Endpoint Protection
+#+filetags: :lecture:
+* Lecture Notes
+Antivirus software and endpoint protection tools secure end-user devices: laptops, desktops, mobile phones, tablets, and servers - which are the most frequent entry points for cyberattacks.
+
+Endpoints are targeted because they are directly exposed to threats like phishing emails, infected downloads, and malicious links - in other words, they sit at the human-technology boundary where most attacks begin.
+
+This node describes an evolution from simple signature-based antivirus to modern Endpoint Protection Platforms (EPP) and Endpoint Detection and Response (EDR) tools, each offering increasingly sophisticated protection within the [[id:2f03d2a4-1d76-4da6-a7a1-492c3090953f][Defense-in-Depth]] strategy.
+Effective endpoint protection helps contain [[id:e92b2fbc-03d6-4cea-a544-b9eb0f693774][common cyber threat types]] - particularly malware and phishing payloads - early, preventing lateral spread across [[id:a4c39818-dd36-4f8a-ae85-a0e8c294ac09][distributed systems]].
+
+* Key Concepts
+** Traditional Antivirus
+Traditional antivirus software detects and removes known malware by maintaining a database of malware *signatures* (code patterns), scanning files, processes, and memory for matches, then flagging or removing suspicious files.
+Its fundamental limitation: it can only detect *known* threats. It is ineffective against zero-day malware, polymorphic viruses (which mutate to evade signature matching), and fileless attacks that operate entirely in memory.
+Examples: Windows Defender, Avast, AVG.
+
+** Endpoint Protection Platforms (EPP)
+EPPs represent next-generation endpoint security that goes beyond signature matching with four key capabilities: - *Behavior-Based Detection*: Monitors for suspicious behavioral patterns (unusual file encryption, privilege escalation) even when the malware itself is unknown.
+- *Cloud-Based Threat Intelligence*: Pulls real-time updates on emerging threats from global databases.
+- *Attack Surface Reduction*: Controls on script execution, application whitelisting, and device control (e.g., blocking USB drives).
+- *Malware Sandboxing*: Isolates unknown files and executes them in a virtual environment to observe behavior before allowing them to run on the real system.
+EPPs are designed to stop advanced threats and provide preventive capabilities beyond what traditional antivirus can offer.
+
+** Endpoint Detection and Response (EDR)
+EDR provides *continuous monitoring and response* capabilities on endpoints, going further than EPPs by enabling investigation and response after a threat has been detected.
+Key features: real-time threat detection, historical attack investigation via logs and timelines, and automated or manual response (isolating an endpoint, killing a process, extracting a file).
+EDR enables rapid incident response and forensic analysis after a breach — it is the endpoint-level equivalent of the detective and corrective controls in the security controls framework.
+Popular tools: CrowdStrike Falcon, Microsoft Defender for Endpoint, SentinelOne.
+
+** EPP vs EDR Comparison
+*** Features
+**** Focus
+EPP: Prevention
+EDR: Detection, investigation, response
+
+**** Detection Method
+EPP: Signatures + basic behaviour
+EDR: Advanced behavioural
+
+**** Response
+EPP: Quarantine, alert
+EDR: Containment, rollback, forensic tools
+
+**** Data Collection
+EPP: Light
+EDR: Detailed logs, system snapshots
+
+**** Deployment
+EPP: Typically agent-based
+EDR: Agent-based with central analysis platform
+
+** Best Practices
+Use both EPP and EDR as complementary layers within [[id:2f03d2a4-1d76-4da6-a7a1-492c3090953f][Defense-in-Depth]] - EPP prevents, EDR investigates and responds.
+Enforce automatic updates and patching on all endpoints — connecting to [[id:][Patch Management]].
+Pair endpoint protection with user training to reduce phishing susceptibility, since most breaches originate from endpoint-level human error.

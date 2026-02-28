@@ -1,0 +1,44 @@
+:PROPERTIES:
+:ID:       00bead97-065c-4a3b-9b43-d98a4e5cb1c2
+:END:
+#+title: WannaCry Ransomware (2017)
+#+filetags: :lecture:
+* Lecture Notes
+WannaCry is the defining case study of Lecture B, illustrating how a single unpatched vulnerability in a [[id:a4c39818-dd36-4f8a-ae85-a0e8c294ac09][distributed system]] can cascade into a global catastrophe affecting hundreds of thousands of machines across 150 countries.
+
+It serves as a direct parallel to the [[id:e0707681-afc9-45c5-b207-1871161d0d2d][Equifax Data Breach (2017)]], which occurred the same year and shared the same root cause: a critical patch was available but never applied.
+
+Both cases reinforce what the course calls its central patch management principle: "A patch not applied is a vulnerability waiting to be exploited."
+WannaCry is also the primary real-world example for [[id:e92b2fbc-03d6-4cea-a544-b9eb0f693774][Common Cyber Threat Types]] - specifically demonstrating how ransomware (a malware subtype) and worm propagation combine to maximize damage.
+
+* Key Concepts
+** What Happened
+WannaCry was a global ransomware attack that emerged on May 12, 2017.
+It used a *self-propagating worm* mechanism to spread rapidly across networks - meaning it required no user interaction once it was inside a vulnerable network.
+The malware encrypted files on infected systems and demanded a Bitcoin ransom for decryption.
+Even air-gapped machines with no direct internet access were infected, as the worm spread laterally through internal networks.
+
+** Spread Mechanism
+WannaCry exploited *CVE-2017-0144*, a critical vulnerability in the SMBv1 (Server Message Block) protocol in Microsoft Windows.
+This exploit was derived from *EternalBlue*, a cyberweapon developed by the NSA that was leaked by the Shadow Brokers hacking group.
+Microsoft had released patch *MS17-010* two months earlier in March 2017 - but vast numbers of systems, especially in critical sectors and developing countries, remained unpatched.
+This is the defining example of the *unpatched software* vulnerability type from [[id:a4c39818-dd36-4f8a-ae85-a0e8c294ac09][Distributed Systems]].
+
+** Impact
+- *Scale*: Over 230,000 computers infected across 150+ countries within days.
+- *Healthcare*: The UK's National Health Service (NHS) was severely disrupted - hospital systems shut down, appointments cancelled, ambulances rerouted.
+- *Telecommunications*: Telefónica (Spain), Megafon (Russia).
+- *Transportation*: Deutsche Bahn (Germany), FedEx.
+- *Financial damages*: Estimated global losses exceeded $4 billion.
+
+** CIA Triad Violations
+- *Availability*: Systems were locked and rendered inoperable — the primary attack on the CIA Triad.
+- *Confidentiality*: Data was encrypted and effectively held hostage; some variants also exfiltrated data.
+- *Integrity*: File system integrity was destroyed by unauthorized encryption.
+
+* Key Lessons
+1. *Patch early, patch often* - known vulnerabilities are among the most common and preventable attack vectors.
+2. Organizations must *inventory all software and systems*, especially legacy infrastructure, and maintain proper update cycles.
+3. *Network segmentation and least privilege access* limit lateral spread - a worm that cannot move between segments cannot scale.
+4. *Backups and incident response plans* are critical: organizations with clean backups could recover without paying ransom.
+5. The EternalBlue \(\rightarrow\) WannaCry chain illustrates how government-developed cyberweapons, once leaked, become devastating tools for [[id:e92b2fbc-03d6-4cea-a544-b9eb0f693774][Common Cyber Threat Types]] in the hands of criminal actors.

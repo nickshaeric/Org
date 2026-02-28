@@ -5,10 +5,14 @@
 #+filetags: :lecture:
 * Lecture Notes
 [[id:0be6b1f3-fb8c-4cde-b580-f7028e347518][Cybersecurity]] & [[id:2df80c85-7f5a-4829-bf7c-a5bc82be2a4c][Privacy]] are closely related but address fundamentally different concerns, and conflating them is a common source of confusion.
+
 Security is primarily a technical and operational discipline - it asks "how do we defend systems and data from unauthorized access or attack?"
+
 Privacy is primarily a rights-based and ethical discipline - it asks "who should be permitted to access this data, under what conditions, and with whose consent?"
+
 The key insight is that security is a *tool* that can serve privacy, but security alone does not guarantee privacy.
 A well-secured system can still violate privacy if the data it protects is being collected or used in ways the individual has not consented to.
+
 Conversely, privacy policies and frameworks depend on security controls to actually be enforceable - without encryption and access control, privacy guarantees are meaningless in practice.
 The two concepts are therefore best understood as *complementary and mutually dependent*, each operating in a different register.
 

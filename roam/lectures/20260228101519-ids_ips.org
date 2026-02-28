@@ -1,0 +1,62 @@
+:PROPERTIES:
+:ID:       018f7a00-e51d-4a05-865b-8f4933b6cb55
+:END:
+#+title: IDS & IPS
+#+filetags: :lecture:
+* Lecture Notes
+Intrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS) are two essential and complementary technologies used to identify and respond to malicious activity on networks or systems.
+The key distinction is their response mode: an IDS is *passive* - it detects and alerts, but does not act. An IPS is *active* - it detects and immediately blocks or mitigates the threat.
+
+_Analogy:_ IDS is a security guard who raises an alarm; IPS is a guard who raises an alarm *and* physically stops the attacker.
+
+Both IDS and IPS sit within the *detective* and *preventive* layers of [[id:2f03d2a4-1d76-4da6-a7a1-492c3090953f][Defense-in-Depth]] respectively: IDS enables detection, IPS enables prevention in real time.
+They directly support *Availability* and *Confidentiality* in the [[id:326ef9ea-d7ec-4034-967f-3465f91e8aa4][CIA Triad]] by identifying and stopping threats before they cause damage.
+
+* Key Concepts
+** IDS — Intrusion Detection System
+An IDS monitors network or host activity and alerts administrators when potentially malicious activity is detected.
+It is passive - it does not block traffic.
+Deployment: Typically placed *out-of-band*, meaning it monitors a copy of traffic rather than sitting directly in the traffic path.
+Limitation: Relies on security teams to take manual action after receiving alerts - response speed depends on human availability.
+Use cases: Monitoring for brute-force login attempts, detecting unauthorized port scanning, and identifying lateral movement post-compromise.
+
+** IPS — Intrusion Prevention System
+An IPS monitors and *actively takes action* - it blocks or quarantines malicious traffic in real time by dropping packets, resetting connections, or quarantining hosts.
+Deployment: Placed *in-line*, meaning all traffic passes through the IPS for inspection before reaching internal systems.
+Often integrated with [[id:41771f87-ae23-43c3-a3fe-548cb4d38315][Firewalls]] (especially NGFWs) as a combined defense layer.
+Use cases: Blocking known malware signatures before they reach internal systems, automatically stopping DDoS traffic.
+Risk: Because the IPS sits in-line, false positives can block legitimate traffic - tuning is critical.
+
+** Detection Techniques
+Both IDS and IPS use one of two detection approaches:
+*Signature-Based Detection* - matches traffic against a database of known attack patterns, similar to how traditional antivirus works. Fast and accurate against known threats, but completely ineffective against zero-day attacks and novel malware.
+Example: blocking a packet that matches the WannaCry ransomware signature.
+
+*Anomaly-Based Detection* - establishes a baseline of normal activity and flags anything that deviates significantly. Effective at identifying [[id:e92b2fbc-03d6-4cea-a544-b9eb0f693774][Common Cyber Threat Types]] like zero-days, insider threats, and new attack patterns. Requires tuning to avoid false positives. Example: alerting when a user downloads 100GB of data at 3AM.
+
+** IDS vs IPS Comparison
+*** Features
+**** Role
+IDS: Detection and alerting
+IPS: Detection and active prevention
+
+**** Response
+IDS: Passive (alerts only)
+IPS: Active (blocks or mitigates traffic)
+
+**** Deployment
+IDS: Out-of-band
+IPS: In-line (traffic passes through)
+
+**** Risk of False Positive
+IDS: Low impact (no blocking)
+IPS: High (can block legitimate traffic)
+
+**** Speed Requirement
+IDS: Lower
+IPS: Higher (must act in real time)
+
+** Best Practices
+Use IDS for monitoring-only zones such as internal segments where blocking would be disruptive.
+Use IPS at the perimeter to proactively stop attacks before they reach endpoints.
+Regularly update signatures and tune anomaly thresholds to balance detection accuracy and false positive rates.

@@ -35,7 +35,7 @@ Missing a worksheet without a valid documented reason results in a zero for both
 ** Attendance
 Recorded for tutorials only. A minimum of *95%* attendance is required for full credit.
 
-* Lecture A
+* Lecture A - Introduction to Information Security and Privacy
 - [[id:0be6b1f3-fb8c-4cde-b580-f7028e347518][Cybersecurity]]
 - [[id:2df80c85-7f5a-4829-bf7c-a5bc82be2a4c][Privacy]]
 - [[id:ccf64ce0-6296-46c7-92c4-3135ff15231b][Privacy vs Security]]
@@ -45,4 +45,17 @@ Recorded for tutorials only. A minimum of *95%* attendance is required for full 
 - [[id:e0707681-afc9-45c5-b207-1871161d0d2d][Equifax Data Breach (2017)]]
 - [[id:040043af-54dd-4bf3-8531-d773308c9f3a][SolarWinds Supply Chain Attack (2020)]]
 
-* Lecture B
+* Lecture B - Security Threats and Defense Mechanisms
+- [[id:4be1a51f-d94f-4c23-8b1a-2cbdbbec45fd][Security Threat Categories]]
+- [[id:e92b2fbc-03d6-4cea-a544-b9eb0f693774][Common Cyber Threat Types]]
+- [[id:00bead97-065c-4a3b-9b43-d98a4e5cb1c2][WannaCry Ransomware (2017)]]
+- [[id:2f03d2a4-1d76-4da6-a7a1-492c3090953f][Defense-in-Depth]]
+- [[id:41771f87-ae23-43c3-a3fe-548cb4d38315][Firewalls]]
+- [[id:018f7a00-e51d-4a05-865b-8f4933b6cb55][IDS & IPS]]
+- [[id:52711a00-a26b-440e-9867-3219b6072c25][Antivirus and Endpoint Protection]]
+- [[id:a5174f5b-83cb-4310-ba1d-543669325e02][Patch Management]]
+- [[id:fd848e55-dc43-4e6b-ba75-a1c790ef0d01][Security Controls]]
+
+* Lecture C - Access Control Mechanisms
+
+* Lecture D - Network and Software Security

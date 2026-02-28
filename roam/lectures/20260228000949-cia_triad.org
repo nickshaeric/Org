@@ -5,12 +5,18 @@
 #+filetags: :lecture:
 * Lecture Notes
 The CIA Triad is the foundational model for understanding and implementing information security principles.
+
 It stands for *Confidentiality*, *Integrity*, and *Availability* - three pillars that guide the design, assessment, and management of secure systems.
+
 As introduced in [[id:0be6b1f3-fb8c-4cde-b580-f7028e347518][cybersecurity]], these three principles form the stated goal of the entire discipline - every major security framework and risk management strategy can be traced back to one or more of them.
+
 It is also worth situating the triad relative to [[id:ccf64ce0-6296-46c7-92c4-3135ff15231b][privacy vs security]]: the CIA Triad is fundamentally a *security* framework - it tells us how to defend systems and data.
 However, *Confidentiality* in particular operates as the bridge between security and [[id:2df80c85-7f5a-4829-bf7c-a5bc82be2a4c][privacy]] - enforcing confidentiality through encryption and access control is the primary technical mechanism through which privacy rights are made enforceable in practice.
+
 Without confidentiality controls, privacy policies and frameworks are simply unenforceable promises.
+
 It is worth noting that the three pillars are not independent - attacks often target multiple pillars simultaneously.
+
 For example, a ransomware attack violates both *Availability* (by locking users out of their data) and *Confidentiality* (by potentially exfiltrating that data before encrypting it).
 Similarly, a man-in-the-middle attack violates both *Confidentiality* (by intercepting data) and *Integrity* (by potentially altering it in transit).
 Understanding the triad therefore means not just knowing each pillar in isolation, but recognizing how violations interact across them.

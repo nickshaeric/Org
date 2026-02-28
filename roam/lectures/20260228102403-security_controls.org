@@ -1,0 +1,62 @@
+:PROPERTIES:
+:ID:       fd848e55-dc43-4e6b-ba75-a1c790ef0d01
+:END:
+#+title: Security Controls
+#+filetags: :lecture:
+* Lecture Notes
+Security controls are safeguards or countermeasures used to reduce risk, protect assets, and ensure the Confidentiality, Integrity, and Availability of information as defined by the [[id:326ef9ea-d7ec-4034-967f-3465f91e8aa4][CIA Triad]].
+
+They are the building blocks of any [[id:2f03d2a4-1d76-4da6-a7a1-492c3090953f][Defense-in-Depth]] strategy and are classified into three functional types based on *when* they act relative to a threat: before (preventive), during or after (detective), or after (corrective).
+
+The key insight is that all three types are necessary - relying only on prevention is insufficient because no defense is perfect, and relying only on detection and correction means threats will always cause some degree of damage before being addressed.
+
+The lecture's memorable formulation captures the relationship perfectly: "Prevention is ideal, detection is essential, correction is survival. A good security program has all three: stop it, spot it, and fix it."
+
+* Key Concepts
+** Preventive Controls
+*Preventive controls* act *before an incident* by stopping threats at the entry point through blocking, restricting, or hardening systems.
+They are proactive and reduce the likelihood of an attack or unauthorized access succeeding.
+Examples:
+- *Firewalls* - block unwanted traffic from reaching the internal network. See [[id:41771f87-ae23-43c3-a3fe-548cb4d38315][Firewalls]].
+- *MFA (Multi-Factor Authentication)* - adds an extra layer of identity verification.
+- *Encryption* - ensures intercepted data remains unreadable without a decryption key, directly protecting *Confidentiality* in the [[id:326ef9ea-d7ec-4034-967f-3465f91e8aa4][CIA Triad]].
+- *Security Awareness Training* - educates users to recognize and avoid phishing and social engineering.
+Key benefit: Reduces attack surface and stops many threats at the perimeter.
+
+** Detective Controls
+*Detective controls* act *during or after an incident* by monitoring systems and networks to identify malicious activity, violations, or abnormal behavior.
+They do not block threats, but enable rapid awareness and response.
+Examples:
+- *IDS (Intrusion Detection Systems)* - monitor traffic and generate alerts. See [[id:018f7a00-e51d-4a05-865b-8f4933b6cb55][IDS & IPS]].
+- *Audit Logs* - track and record system events for later review or forensic investigation.
+- *SIEM Tools* - aggregate and analyze logs in real time to detect coordinated or distributed attacks across the environment.
+Key benefit: Enables quick detection and facilitates incident response and forensic analysis.
+
+** Corrective Controls
+*Corrective controls* act *after an incident* by mitigating impact, restoring normal operations, and preventing recurrence.
+They work alongside or after detective controls, focusing on damage control and recovery.
+Examples:
+- *System Reimaging* - reinstalls a clean OS version after malware infection.
+- *Backups and Recovery Tools* - restore lost or corrupted data after ransomware or accidental deletion; this is why the [[id:00bead97-065c-4a3b-9b43-d98a4e5cb1c2][WannaCry Ransomware (2017)]]  impact was so severe for organizations without backups.
+- *Isolation Protocols* - quarantine affected systems to prevent lateral spread of malware across the [[id:a4c39818-dd36-4f8a-ae85-a0e8c294ac09][distributed system]].
+- *Patch Deployment* - after identifying exploited vulnerabilities, patches are applied to close the gap and prevent recurrence.
+Key benefit: Minimizes business disruption and restores Availability in the [[id:326ef9ea-d7ec-4034-967f-3465f91e8aa4][CIA Triad]] after a breach.
+
+* Examples
+** Controls Across the Attack Lifecycle
+*** Control Type
+**** Preventative
+Timing: Before incident
+Examples: Firewall, MFA, encryption, training
+CIA Pillar Protected: Confidentiality, Availability
+**** Detective
+Timing: During/After
+Examples: IDS, audit logs, SIEM
+CIA Pillar Protected: All three (via visibility)
+**** Corrective
+Timing: After incident
+Examples: Backups, reimaging, isolation
+CIA Pillar Protected: Availability, Integrity
+
+** Equifax Through the Controls Lens
+The [[id:e0707681-afc9-45c5-b207-1871161d0d2d][Equifax Data Breach (2017)]] failed at all three levels: no patch (preventive failure), no monitoring that detected lateral movement for months (detective failure), and no encryption at rest or network segmentation to limit damage (corrective/containment failure).

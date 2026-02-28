@@ -1,0 +1,55 @@
+:PROPERTIES:
+:ID:       41771f87-ae23-43c3-a3fe-548cb4d38315
+:END:
+#+title: Firewalls
+#+filetags: :lecture:
+* Lecture Notes
+A firewall is a network security device or software that acts as a barrier between a trusted internal network and an untrusted external network such as the internet.
+
+It monitors, filters, and controls incoming and outgoing network traffic based on predefined security rules, making it the *first line of defense* in any [[id:2f03d2a4-1d76-4da6-a7a1-492c3090953f][Defense-in-Depth]] architecture.
+
+Firewalls are a *preventive control* - they act before an incident by blocking unauthorized traffic before it reaches internal systems.
+
+In terms of the [[id:326ef9ea-d7ec-4034-967f-3465f91e8aa4][CIA Triad]], firewalls primarily protect *Confidentiality* (by preventing unauthorized access to data) and *Availability* (by blocking DoS traffic), and indirectly support *Integrity* by preventing tampering attacks from reaching internal systems.
+
+* Key Concepts
+** Why Firewalls Matter
+Firewalls serve three core purposes: they enforce network boundaries ensuring only legitimate traffic passes, they serve as the first barrier against external attackers, and they detect early signs of attacks such as port scans or suspicious IP behavior through logging.
+
+** Types of Firewalls
+*Packet-Filtering Firewall* - the simplest type, examines packets in isolation and allows or blocks traffic based on source/destination IP, port number, and protocol. Its key limitation is that it does not track connection state or inspect payloads, making it blind to attacks that use allowed ports.
+
+*Stateful Inspection Firewall* - tracks the state and context of active connections, allowing only legitimate return traffic for established sessions. More secure than packet-filtering because it performs dynamic traffic analysis - unsolicited external packets are blocked even on allowed ports.
+
+*Proxy Firewall (Application-Level Gateway)* - acts as an intermediary between users and services, inspecting traffic at the application layer (HTTP, FTP). Can anonymize internal users and filter content. Slower but more thorough - ideal for high-risk applications.
+
+*Next-Generation Firewall (NGFW)* - combines traditional firewall functions with advanced features including Deep Packet Inspection (DPI), an integrated Intrusion Prevention System (IPS), application awareness, and user identity tracking. NGFWs integrate with threat intelligence feeds for real-time blocking of known threats and are the standard for modern enterprise networks with cloud, IoT, and mobile endpoints.
+
+** Core Functions
+1. *Traffic Control*: Allow or block network traffic based on rule sets.
+2. *Access Restriction*: Enforce policies defining who can access what, when, and how.
+3. *Logging and Monitoring*: Record accepted and rejected connections for auditing and forensics - this is also where firewalls overlap with *detective controls*.
+4. *Alerts and Alarms*: Notify administrators of suspicious behavior such as repeated failed login attempts.
+5. *Network Address Translation (NAT)*: Hide internal IP addresses from the external network for added privacy and security.
+
+** Rules and Best Practices
+A well-known example rule: "Block all incoming traffic except TCP port 443 (HTTPS)" - only secure web traffic is permitted, keeping other ports closed to outsiders.
+Best practices: Follow the principle of least privilege for ports (open the minimum necessary), regularly review and update rules to close old vulnerabilities, and integrate with SIEM tools for centralized alerting.
+
+* Examples
+** Firewall Types Summary
+*** Packet-Filtering
+Mechanism: IP, port, protocol rules
+Key Limitation: No state or payload inspection
+
+*** Stateful
+Mechanism: Tracks connection state
+Key Limitation: Slower than packet-filtering
+
+*** Proxy
+Mechanism: Application-layer intermediary
+Key Limitation: Performance overhead
+
+*** NGFW
+Mechanism: DPI + IPS + app awareness
+Key Limitation: Cost and complexity

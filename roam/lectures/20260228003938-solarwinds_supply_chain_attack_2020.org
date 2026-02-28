@@ -5,10 +5,15 @@
 #+filetags: :lecture:
 * Lecture Notes
 The SolarWinds attack stands in sharp contrast to the [[id:e0707681-afc9-45c5-b207-1871161d0d2d][Equifax Data Breach (2017)]] - where Equifax fell victim to opportunistic exploitation of a known unpatched flaw, SolarWinds represents a fundamentally different category of threat: a sophisticated, deliberate, nation-state operation that weaponized the software supply chain itself.
+
 The attack was attributed to APT29 (Cozy Bear), a Russian intelligence group - placing it squarely in the nation-state category of [[id:41aad614-a6f6-4be2-b524-f2bc6897c85a][threat actors]] - and is now considered one of the most sophisticated supply chain attacks in history.
+
 What made it so devastating was not brute force but the exploitation of *trust* - attackers inserted malicious code (SUNBURST malware) into legitimate, digitally signed updates for SolarWinds' Orion software, meaning victims installed the attack themselves by doing exactly what good security practice recommends: keeping their software up to date.
+
 All three pillars of the [[id:326ef9ea-d7ec-4034-967f-3465f91e8aa4][CIA Triad]] were compromised at scale: *Confidentiality* through access to sensitive emails and accounts, *Integrity* through the insertion of malicious code into trusted software, and *Availability* through the potential to disrupt critical systems across thousands of organizations.
+
 The [[id:2df80c85-7f5a-4829-bf7c-a5bc82be2a4c][privacy]] implications were equally severe — attackers had persistent, stealthy access to government and corporate systems for months, with full visibility into communications and data that individuals and organizations reasonably expected to be private and secure.
+
 From a [[id:a4c39818-dd36-4f8a-ae85-a0e8c294ac09][distributed systems]] perspective, this attack is the defining illustration of supply chain vulnerability — the weakest link was not Equifax's own infrastructure but a trusted third-party vendor whose software was deployed across thousands of networks simultaneously.
 
 * Key Concepts
@@ -29,7 +34,10 @@ Attackers were able to escalate privileges, move laterally across networks, and 
 ** Key Lessons
 The SolarWinds attack teaches four lessons that are increasingly central to modern security practice.
 First, *software integrity must be verified beyond digital signatures* - build environments must be monitored, secure code audits conducted, and software behaviour validated even after deployment. Adopting SBOMs (Software Bill of Materials) to track dependencies is now considered best practice.
+
 Second, *continuous monitoring and anomaly detection are essential* - even trusted systems can be compromised. Endpoint detection and response (EDR), user behaviour analytics (UBA), and network traffic analysis are necessary to catch what perimeter defenses miss.
+
 Third, *zero trust architecture and network segmentation limit blast radius* - no software should be granted broad internal access by default. Enforcing least privilege and role-based access means that even a compromised update cannot move freely through the entire network.
+
 Fourth, *third-party vendors must be rigorously vetted* - security risk assessments, regular audits, and penetration testing of vendors are not optional extras but fundamental requirements in an interconnected supply chain.
 The central lesson mirrors and extends the one from the [[id:e0707681-afc9-45c5-b207-1871161d0d2d][Equifax Data Breach (2017)]]: "in the age of cloud and SaaS, your security is only as strong as your weakest supplier."

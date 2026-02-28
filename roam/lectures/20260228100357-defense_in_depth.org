@@ -1,0 +1,50 @@
+:PROPERTIES:
+:ID:       2f03d2a4-1d76-4da6-a7a1-492c3090953f
+:END:
+#+title: Defense-in-Depth
+#+filetags: :lecture:
+* Lecture Notes
+Defense-in-Depth is the overarching security philosophy introduced in Lecture B and the conceptual framework that connects all individual defense mechanisms together.
+
+It is defined as a *layered security model* built on the assumption that no single defense can fully protect against all threats - and therefore multiple overlapping barriers must be deployed so that if one layer fails, others remain.
+
+This philosophy directly addresses the asymmetry identified in [[id:e92b2fbc-03d6-4cea-a544-b9eb0f693774][Common Cyber Threat Types]]: attackers only need to find one way in, while defenders must cover every possible entry point.
+
+Defense-in-Depth maps onto the [[id:326ef9ea-d7ec-4034-967f-3465f91e8aa4][CIA Triad]] by ensuring that Confidentiality, Integrity, and Availability are each protected by independent, redundant controls - so that a failure in one control does not compromise all three pillars simultaneously.
+
+The castle analogy from the lecture captures the structure well: outer walls (firewalls), guards (access controls), watchtowers (IDS/IPS), and locked gates (authentication) each represent a distinct layer.
+
+* Key Concepts
+** What Defense-in-Depth Achieves
+Three core benefits justify the layered approach:
+1. *Increases system resilience* - multiple independent controls mean no single point of failure.
+2. *Delays attacker progression* - each layer buys time for detection and response.
+3. *Minimizes the blast radius* - even if an attacker penetrates one layer, damage is contained to that segment.
+
+** The Three Types of Security Controls
+Defense-in-Depth is implemented through three functional control types, each acting at a different point in the attack timeline:
+- *Preventive controls* act *before* an incident - blocking, restricting, or hardening systems (e.g., firewalls, MFA, encryption, security awareness training).
+- *Detective controls* act *during or after* an incident - monitoring systems and alerting on suspicious activity (e.g., IDS, audit logs, SIEM tools).
+- *Corrective controls* act *after* an incident - mitigating impact and restoring operations (e.g., backups, system reimaging, isolation protocols, patch deployment).
+The key takeaway: "Prevention is ideal, detection is essential, correction is survival. A good security program has all three: stop it, spot it, and fix it."
+
+** Defense-in-Depth in Practice: The Layered Retail Case
+1. Perimeter Firewall - filters traffic at the network boundary.
+2. VPN - secures remote worker connections.
+3. Web Application Firewall (WAF) - protects public-facing applications from SQL injection, XSS, and bot abuse.
+4. IDS/IPS + EDR - monitors network and endpoint behavior, blocking or alerting on threats.
+5. MFA and password policies - prevents unauthorized access even if credentials are stolen.
+6. Daily backups and cloud redundancy - enables recovery without paying ransom.
+Key lesson: "Layered security ensures that even if one control fails, others are in place to detect, block, defend, and recover from the attack."
+
+* Examples
+** WannaCry Through a Defense-in-Depth Lens
+The [[id:00bead97-065c-4a3b-9b43-d98a4e5cb1c2][WannaCry Ransomware (2017)]] attack succeeded precisely because Defense-in-Depth was absent:
+- No patching layer \(\rightarrow\) EternalBlue exploit was available.
+- No network segmentation \(\rightarrow\) the worm spread freely between machines.
+- No behavioral detection \(\rightarrow\) encryption activity went unnoticed.
+- No backups \(\rightarrow\) victims had no recovery option without paying ransom.
+Had even two or three of these layers been in place, the blast radius would have been dramatically smaller.
+
+** Connection to Equifax
+The [[id:e0707681-afc9-45c5-b207-1871161d0d2d][Equifax Data Breach (2017)]] similarly illustrates Defense-in-Depth failure: no patching, no network segmentation, no encryption at rest, and no monitoring that would have detected lateral movement for months.
